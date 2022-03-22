@@ -1,0 +1,19 @@
+{{/*  <!--
+    Image is a little strange, but we can specify an image based on its name (as long as 
+    the mobile versions comply with the naming convention *name*Mobile.*extension*) and then populate
+    all the the various variants.  Full customization would probably be providing variants for different
+    breakpoints, but for now, we'll just keep the heckin' ideal of 800px width resizes.
+-->
+<figure>
+    <picture>
+        <source srcset="{{ site.url }}{{ site.baseurl }}/assets/media/{{include.image}}Mobile.webp" type="image/webp" media="(max-width: 800px)" />
+        <source srcset="{{ site.url }}{{ site.baseurl }}/assets/media/{{include.image}}Mobile.avif" type="image/avif" media="(max-width: 800px)" />
+        <source srcset="{{ site.url }}{{ site.baseurl }}/assets/media/{{include.image}}Mobile.png" media="(max-width: 800px)" />
+        <source srcset="{{ site.url }}{{ site.baseurl }}/assets/media/{{include.image}}.webp" type="image/webp" />
+        <source srcset="{{ site.url }}{{ site.baseurl }}/assets/media/{{include.image}}.avif" type="image/avif" />
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/media/{{include.image}}.png" alt="{{include.alt}}" />
+        {% if include.caption %}
+            <figcaption>{{include.caption}}</figcaption>
+        {% endif %}
+    </picture>
+    </figure>  */}}

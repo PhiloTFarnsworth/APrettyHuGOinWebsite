@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+    {{ partial "head.html" .}}
+
+<body>
+    <script src='{{.Site.BaseURL}}scripts/jekyllin.js'></script>
+    <header>
+    {{ partial "header.html" . }}
+    <nav id="siteNav" aria-expanded="false">
+        <button type="button" id="toggleNav" data-active="false" aria-atomic="true">Expand Site Navigation</button>
+        <button type="button" id="dummyIndexNav" aria-hidden="false" disabled>Home</button>
+        <button type="button" id="whyNav" aria-hidden="true" hidden="true" disabled>Why?</button>
+        <button type="button" id="sectionNav" aria-hidden="true" hidden="true" disabled>Section Headings</button>
+        <button type="button" id="dataNav" aria-hidden="true" hidden="true" disabled>Data Widgets</button>
+        <button type="button" id="tablesNav" aria-hidden="true" hidden="true" disabled>Tables</button>
+        <button type="button" id="listsNav" aria-hidden="true" hidden="true" disabled>Lists</button>
+        <button type="button" id="otherNav" aria-hidden="true" hidden="true" disabled>Others</button>
+        <button type="button" id="formNav" aria-hidden="true" hidden="true" disabled>Forms</button>
+        <button type="button" id="mediaNav" aria-hidden="true" hidden="true" disabled>Media and More</button>
+        <button type="button" id="satireNav" aria-hidden="true" hidden="true" disabled>Satire Warning</button>
+        <button type="button" id="epilogueNav" aria-hidden="true" hidden="true" disabled>Epilogue</button>
+    </nav>
+    </header>
+    <main aria-atomic="true">
+        {{ .Content }}
+	</main>
+	{{ partial "footer.html" . }}
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!--TODO: Refactor for config -->
+
+<head>
+	<meta charset="UTF-8">
+	<!--SEO STUFF-->
+	<meta name="description" content="{{.Site.Params.Description}}">
+	<meta name="keywords" content="{{.Site.Params.Keywords}}">
+	<meta name="author" content="{{.Site.Params.Author}}">
+	<!--SEO STUFF END-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Cache-control" content="public">
+	<!--Favicon STUFF-->
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}favicon/favicon-16x16.png">
+	<link rel="manifest" href="{{ .Site.BaseURL }}favicon/site.webmanifest">
+	<!--Favicon STUFF END-->
+	<!--Font STUFF-->
+    {{$site := .Site.BaseURL }}
+	{{ range .Site.Params.Fonts }}
+		<link rel="preload" as="font" href="{{ $site }}style/fonts/{{ . }}" crossorigin>
+	{{ end }}
+	<!--Font STUFF END-->
+	<link rel="canonical" href="{{ .Site.BaseURL }}" />
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}style/style.css">
+	<title>{{.Site.Title}}</title>
+</head>

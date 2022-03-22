@@ -1,0 +1,24 @@
+baseURL = 'https://philotfarnsworth.github.io/APrettyHuGoinWebsite'
+languageCode = 'en-us'
+enableRobotsTXT = 'true'
+title = "A Pretty HuGOin' Website"
+# theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = 'true'
+
+[params]
+  description = "A Pretty Heckin' Website using Github Pages and Hugo"
+  keywords = "Website, Heckin, Web Development, Hugo"
+  author = "Michael Gardner"
+  email = "Idodevthings@gmail.com"
+  linkedIn = "www.linkedin.com/in/michael-gardner-az"
+  github = "PhiloTFarnsworth"
+  fonts = [
+    "LEMONMILK-Light.woff2",
+    "LEMONMILK-LightItalic.woff2",
+    "LEMONMILK-Regular.woff2",
+    "LEMONMILK-RegularItalic.woff2",
+  ]

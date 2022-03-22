@@ -1,0 +1,10 @@
+{{ define "main"}}
+<section>
+    <h2>{{.Title}}</h2>
+    {{.Content | safeHTML}}
+</section>
+{{ end }}
+
+{{define "footer"}}
+    <p>Fake footer</p>
+{{ end }}

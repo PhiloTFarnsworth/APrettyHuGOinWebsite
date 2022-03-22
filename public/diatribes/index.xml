@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diatribes on A Pretty HuGOin&#39; Website</title>
+    <link>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/</link>
+    <description>Recent content in Diatribes on A Pretty HuGOin&#39; Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Foreword</title>
+      <link>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/index/</guid>
+      <description>aside: header: &amp;ldquo;Some Heckin&amp;rsquo; Real Talk&amp;rdquo; content: &amp;ldquo;A Pretty Heckin&amp;rsquo; Website was one big document. We&amp;rsquo;ll use to Jekyll to serve the same content, but in digestible pieces.&amp;rdquo;
+A Pretty Jekyllin&amp;rsquo; website is a proving ground for some basic Jekyll framework customization for use with Github Pages. While the basic templates encourage usage for websites like blogs, I though it would be an interesting to build a template that would work like a book or manual.</description>
+    </item>
+    
+    <item>
+      <title>Why Another Jekyllin&#39; Website</title>
+      <link>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/why/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/why/</guid>
+      <description>aside: header: &amp;ldquo;Learning web design?&amp;rdquo; content: &amp;ldquo;Get ready to be schooled&amp;rdquo; image: &amp;ldquo;dunce&amp;rdquo; caption: &amp;ldquo;Armored man dons a pointy dunce cap.&amp;rdquo;
+include aside.htmlModelling a website is no mean feat, and it&#39;s often useful to go back and check the html specfrom time to time as it updates. This is especially important when you&#39;re going for an informative tone.This site seeks to model a text heavy informative website (like a blog) while also utilizing much of thecurrent available HTML features.</description>
+    </item>
+    
+    <item>
+      <title>Section Headings: A Modest Proposal</title>
+      <link>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/section/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/section/</guid>
+      <description>aside: header: &amp;ldquo;Headings Tip&amp;rdquo; content: &amp;ldquo;Keep them short, Wordsworth.&amp;rdquo;
+Headings are shamelessly abused by most modern websites. Beyond usage in an article tag,They should follow their natural ordering and group information based on their labels. They shouldn&#39;t beused for emphasis, or for rhetorical conversations with the reader, instead they should give the readeran idea of the content to follow.include aside.htmlNot only will using relevant headers help your readers follow the content of your page, but it might stop you from abusing data related tags like the ones to follow.</description>
+    </item>
+    
+    <item>
+      <title>Data Organization</title>
+      <link>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/data/</guid>
+      <description>aside: header: &amp;ldquo;Styling&amp;rdquo; content: &amp;ldquo;These elements are also ideal places to add some color.&amp;rdquo;
+include aside.htmlWhile you can deliver text in easy to digest chunks, HTML provides several tags that canprovide comparisons, lists and other information. Not only can you provide this information in a uniformmatter, you can do so without adding extra accessibility overhead.</description>
+    </item>
+    
+    <item>
+      <title>Tables</title>
+      <link>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/tables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/tables/</guid>
+      <description>For instance, let&amp;rsquo;s say you want to measure this website against some other well respected peers? A table can provide that information at a glance. Well respected peers in this case includes several profanity laced tirades about minimalist website design that for better or worse inspired this project. Peruse at your own discretion.
+Tables Are Great for ComparisonsWebsitesRequests1Media?Tables?Forms?Google1000+ kBN/AN/AYESM***** F****** Website~22 kBNONONOBetter M***** F****** Website~22 kBNONONOThe Best M***** F******Website~110 kBYESNONOA Pretty Heckin&#39; Website~122 kB2YESYESYESA Pretty Jekyllin&#39; Website~153 kB3YESYESYES1As measured by a generated Chromium Lighthouse tool report.</description>
+    </item>
+    
+    <item>
+      <title>Lists</title>
+      <link>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/lists/</guid>
+      <description>aside: header: &amp;ldquo;Numbered Lists&amp;rdquo; content: &amp;ldquo;What? Are you writing a table of contents&amp;rdquo;
+Whereas tables are ideal for comparisons, lists are good condensing repetitive or related data. Whilethiscan be convenient in cutting down paragraphs into more digestable content, they should be usedjudiciously. As a general rule of thumb, lists over five items should either be refactored into nestedlists, or refactored into separate lists.include aside.</description>
+    </item>
+    
+    <item>
+      <title>Other Informational Widgets</title>
+      <link>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/other/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/other/</guid>
+      <description>aside: header: &amp;ldquo;Internet Explorer&amp;rdquo; content: &amp;ldquo;It still exists.&amp;rdquo;
+include aside.htmlThese next few widgets have a special note that they are not supported in Internet Explorer.IE compatibility isn&#39;t as big a concern as it was in the past, but you never know, so keepcompatibility in mind and don&#39;t lock any core functionality behind these features.DetailsThe details1 tag is a handy way to implement footnotes and other non-critical data that doesn&amp;rsquo;t merit an aside bubble.</description>
+    </item>
+    
+    <item>
+      <title>Forms are Fundamental</title>
+      <link>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/form/</guid>
+      <description>aside: header: &amp;ldquo;Warning&amp;rdquo; content: &amp;ldquo;Javascript can allow you to make pseudo form elements. Resist the temptation.&amp;rdquo;
+It&#39;s hard to think of a website that doesn&#39;t contain form. Even if your content is a canon oftheological theses, you&#39;re at least going to want to get users to subscribe to your newsletter. Mostimportant considerations are to keep it simple, even if you&#39;re running frameworks on top of frameworks,your forms are going to boil down to something like the one below.</description>
+    </item>
+    
+    <item>
+      <title>Media, images and other pretty things</title>
+      <link>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/media/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/media/</guid>
+      <description>aside: header: &amp;ldquo;Easy to read?&amp;rdquo; content: &amp;ldquo;Padding, Font size and good contrast are the key.&amp;rdquo; quote: content: &amp;ldquo;I didn&amp;rsquo;t kill my wife! Also something about web design!&amp;rdquo; caption: &amp;ldquo;Dr. Richard Kimble&amp;rdquo; cite: &amp;ldquo;Seeking the One Armed Man (1963)&amp;rdquo; image: name: &amp;ldquo;working&amp;rdquo; alt: &amp;ldquo;Web developer working diligently&amp;rdquo; caption: &amp;ldquo;Needed a wide picture here&amp;rdquo;
+include quote.html
+Media is also another concern in modern design. Videos should be responsively sized for both desktop and mobile.</description>
+    </item>
+    
+    <item>
+      <title>Pretty Heckin&#39; Website is not a satire</title>
+      <link>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/satire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/satire/</guid>
+      <description>Every website should look like this, and any which do not conform should be removed from the internet with extreme prejudice. But on a more serious note, minding these standard HTML patterns can help make your webpages more accessible and functional. This site can also be used to measure CSS designs with by modifying the div and div#flexRows to be assigned to create columns and rows respectively. Since you&amp;rsquo;ve already seen it in the superior form, you can compare and see where the prospective layout may falter.</description>
+    </item>
+    
+    <item>
+      <title>Epilogue</title>
+      <link>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/epilogue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://philotfarnsworth.github.io/APrettyHuGoinWebsite/diatribes/epilogue/</guid>
+      <description>Inspired by the brilliant pages The Best M&amp;amp;!@#F$%^&amp;amp;@! Website, Better M&amp;amp;!@#F$%^&amp;amp;@! Website and M&amp;amp;!@#F$%^&amp;amp;@! Website. Beyond being entertaining reads, they offer some sage advice about webpage design. Even if they have never heard of a table.
+Built using Jekyll, a static site generator, SASS for CSS, the font LEMONMILK and resources hosted and shared by Mozilla.
+Hosted by Github Pages.</description>
+    </item>
+    
+  </channel>
+</rss>

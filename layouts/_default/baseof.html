@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+{{ partial "head.html" .}}
+
+<body>
+    <script src='{{.Site.BaseURL}}scripts/jekyllin.js'></script>
+    <header>
+    {{ partial "header.html" . }}
+    {{ block "header" .}}
+    {{ end }}
+    </header>
+    <main>
+        {{ block "main" .}}
+        {{ end }}
+    </main>
+    <footer>
+        {{ block "footer" . }}
+        {{ end }}
+    </footer>
+</body>
+
+</html>
