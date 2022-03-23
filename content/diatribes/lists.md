@@ -27,18 +27,18 @@ paragraphs.
 
 ### This site made with...
 
-* Superior <abbr title="Cascading Style Sheets">CSS</abbr>
+* Superior {{< abbr abbr="CSS" title="Cascading Style Sheets" >}}
     * Lightweight
         * under 250 lines
     * Responsive
         * Broadly compatible 
     * Built with [Sass](https://sass-lang.com/)
-* Honorable <abbr title="HyperText Markup Language">HTML</abbr>
+* Honorable {{< abbr abbr="HTML" title="HyperText Markup Language" >}}
     * Semantic
         * Built for default accessibility
     * Comprehensive
-        * features most <abbr>HTML</abbr> tags
-* Judicious <abbr title="Javascript">JS</abbr>
+        * features most {{< abbr HTML >}} tags
+* Judicious {{< abbr abbr="JS" title="Javascript">}}
     * Vanilla JS to power forms and navigation
 * Jovial [Jekyll](https://jekyllrb.com)
     * Markdown

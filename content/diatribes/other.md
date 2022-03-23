@@ -12,7 +12,7 @@ aside:
     include aside.html
     <p>
         These next few widgets have a special note that they are not supported in Internet Explorer.
-        <abbr>IE</abbr> compatibility isn't as big a concern as it was in the past, but you never know, so keep
+        {{< abbr IE >}} compatibility isn't as big a concern as it was in the past, but you never know, so keep
         compatibility in mind and don't lock any core functionality behind these features.
     </p>
 </div>
@@ -20,7 +20,7 @@ aside:
 <h3 id="detailHead">Details</h3>
 
 The details<sup>1</sup> tag is a handy way to implement footnotes and other non-critical data that doesn't
-merit an aside bubble. Even when used with <abbr>IE</abbr> the summary and content will still be available,
+merit an aside bubble. Even when used with {{< abbr IE >}} the summary and content will still be available,
 so compatibility is a minor concern employing the details element.
 
 <details>

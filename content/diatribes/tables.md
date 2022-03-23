@@ -46,13 +46,13 @@ discretion.
             <td name="no">NO
             <td name="no">NO
         <tr>
-            <th scope="row"><a href="#">A Pretty Heckin' Website</a>
+            <th scope="row"><a href="https://philotfarnsworth.github.io/APrettyHeckinWebsite/">A Pretty Heckin' Website</a>
             <td>~122 kB<sup>2</sup>
             <td name="yes">YES
             <td name="yes">YES
             <td name="yes">YES
         <tr>
-            <th scope="row"><a href="#">A Pretty Jekyllin' Website</a>
+            <th scope="row"><a href="https://philotfarnsworth.github.io/APrettyJekyllinWebsite/">A Pretty Jekyllin' Website</a>
             <td>~153 kB<sup>3</sup>
             <td name="yes">YES
             <td name="yes">YES

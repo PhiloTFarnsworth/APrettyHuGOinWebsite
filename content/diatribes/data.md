@@ -12,7 +12,7 @@ aside:
 <div>
     include aside.html
     <p>
-        While you can deliver text in easy to digest chunks, <abbr>HTML</abbr> provides several tags that can
+        While you can deliver text in easy to digest chunks, {{< abbr HTML >}} provides several tags that can
         provide comparisons, lists and other information. Not only can you provide this information in a uniform
         matter, you can do so without adding extra accessibility overhead.
     </p>
