@@ -7,16 +7,14 @@ draft: false
 aside:
     header: "Easy to read?"
     content: "Padding, Font size and good contrast are the key."
-quote:
-    content: "I didn't kill my wife! Also something about web design!"
-    caption: "Dr. Richard Kimble"
-    cite: "Seeking the One Armed Man (1963)"
 image:
     name: "working"
     alt: "Web developer working diligently"
     caption: "Needed a wide picture here"
 
-include quote.html
+{{< quote author="Dr. Richard Kimble" cite="Seeking the One Armed Man" year="1963">}}
+I didn't kill my wife! Also something about web design!
+{{</ quote >}}
 
 Media is also another concern in modern design. Videos should be responsively sized for both desktop and
 mobile. Size and compression is a consideration. We can also embed, if we are concerned with hosting
