@@ -60,22 +60,13 @@ discretion.
     <tfoot>
         <tr>
             <td colspan="5">
-                <details>
-                    <summary>1</summary>
-                    <p>As measured by a generated Chromium Lighthouse tool report.</p>
-                </details>
+                {{< details summary="1" body="As measured by a generated Chromium Lighthouse tool report." >}}
         <tr>
             <td colspan="5">
-                <details>
-                    <summary>2</summary>
-                    <p>Excluding Youtube embed.</p>
-                </details>
+                {{< details summary="2" body="Excluding Youtube embed." >}}
         <tr>
             <td colspan="5">
-                <details>
-                    <summary>3</summary>
-                    <p>It's only ~111 kB if you stop reading now.</p>
-                </details>
+                {{< details summary="3" body="It's only ~111 kB if you stop reading now." >}}
 </table>
 <!-- 
     For the time being, we'll keep the regular html table format.  The colored boxes used 

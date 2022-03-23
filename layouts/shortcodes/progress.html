@@ -1,0 +1,7 @@
+<label class='freeLabel' for='{{ .Get "id" }}'>{{ .Get "label" }}</label>
+<progress 
+    id='{{ .Get "id" }}' 
+    min='{{ if .Get "min" }}{{ .Get "min" }}{{ else }}0{{ end }}' 
+    max='{{ if .Get "max" }}{{ .Get "max" }}{{ else }}100{{ end }}' 
+    value='{{ if .Get "value" }}{{ .Get "value" }}{{ else }}0{{ end }}'>
+</progress>
