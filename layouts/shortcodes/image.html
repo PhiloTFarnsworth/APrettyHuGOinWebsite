@@ -6,14 +6,28 @@
 -->
 <figure>
     <picture>
-        <source srcset="{{ site.url }}{{ site.baseurl }}/assets/media/{{include.image}}Mobile.webp" type="image/webp" media="(max-width: 800px)" />
-        <source srcset="{{ site.url }}{{ site.baseurl }}/assets/media/{{include.image}}Mobile.avif" type="image/avif" media="(max-width: 800px)" />
-        <source srcset="{{ site.url }}{{ site.baseurl }}/assets/media/{{include.image}}Mobile.png" media="(max-width: 800px)" />
-        <source srcset="{{ site.url }}{{ site.baseurl }}/assets/media/{{include.image}}.webp" type="image/webp" />
-        <source srcset="{{ site.url }}{{ site.baseurl }}/assets/media/{{include.image}}.avif" type="image/avif" />
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/media/{{include.image}}.png" alt="{{include.alt}}" />
+        <source srcset='{{ .Site.BaseURL }}assets/media/{{ .Get "image" }}Mobile.webp' type='image/webp' media='(max-width: 800px)' />
+        <source srcset='{{ .Site.BaseURL }}assets/media/{{ .Get "image" }}Mobile.avif' type='image/avif' media='(max-width: 800px)' />
+        <source srcset='{{ .Site.BaseURL }}assets/media/{{ .Get "image" }}Mobile.png' media='(max-width: 800px)' />
+        <source srcset='{{ .Site.BaseURL }}assets/media/{{ .Get "image" }}.webp' type='image/webp' />
+        <source srcset='{{ .Site.BaseURL }}assets/media/{{ .Get "image" }}.avif' type='image/avif' />
+        <img src='{{ .Site.BaseURL }}assets/media/{{ .Get "image" }}.png' alt='{{include.alt}}' />
         {% if include.caption %}
             <figcaption>{{include.caption}}</figcaption>
         {% endif %}
     </picture>
     </figure>  */}}
+
+<figure>
+    <picture>
+        <source srcset='images/{{ .Get "image" }}Mobile.webp' type='image/webp' media='(max-width: 800px)' />
+        <source srcset='images/{{ .Get "image" }}Mobile.avif' type='image/avif' media='(max-width: 800px)' />
+        <source srcset='images/{{ .Get "image" }}Mobile.png' media='(max-width: 800px)' />
+        <source srcset='images/{{ .Get "image" }}.webp' type='image/webp' />
+        <source srcset='images/{{ .Get "image" }}.avif' type='image/avif' />
+        <img src='images/{{ .Get "image" }}.png' alt='{{ .Get "alt" }}' />
+    </picture>
+    {{ if .Get "caption" }}
+        <figcaption>{{ .Get "caption" }}</figcaption>
+    {{ end }}
+</figure>

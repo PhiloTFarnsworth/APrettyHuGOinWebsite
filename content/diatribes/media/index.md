@@ -7,12 +7,8 @@ draft: false
 aside:
     header: "Easy to read?"
     content: "Padding, Font size and good contrast are the key."
-image:
-    name: "working"
-    alt: "Web developer working diligently"
-    caption: "Needed a wide picture here"
 
-{{< quote author="Dr. Richard Kimble" cite="Seeking the One Armed Man" year="1963">}}
+{{< quote author="Dr. Richard Kimble" cite="Seeking the One Armed Man" year="1963" >}}
 I didn't kill my wife! Also something about web design!
 {{</ quote >}}
 
@@ -38,4 +34,4 @@ substantially smaller than conventional formats.
     </p>
 </div>
 
-include image.html image=page.image.name alt=page.image.alt caption=page.image.caption 
+{{< image image="working" alt="Web developer working diligently" caption="Needed a wide picture here" >}}
