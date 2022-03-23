@@ -15,7 +15,7 @@ discretion.
     <thead>
         <tr>
             <th scope="col">Websites
-            <th scope="col">Requests<sup>1</sup>
+            <th scope="col">Requests{{< sup 1 >}}
             <th scope="col">Media?
             <th scope="col">Tables?
             <th scope="col">Forms?
@@ -47,13 +47,13 @@ discretion.
             <td name="no">NO
         <tr>
             <th scope="row"><a href="https://philotfarnsworth.github.io/APrettyHeckinWebsite/">A Pretty Heckin' Website</a>
-            <td>~122 kB<sup>2</sup>
+            <td>~122 kB{{< sup 2 >}}
             <td name="yes">YES
             <td name="yes">YES
             <td name="yes">YES
         <tr>
             <th scope="row"><a href="https://philotfarnsworth.github.io/APrettyJekyllinWebsite/">A Pretty Jekyllin' Website</a>
-            <td>~153 kB<sup>3</sup>
+            <td>~153 kB{{< sup 3 >}}
             <td name="yes">YES
             <td name="yes">YES
             <td name="yes">YES
