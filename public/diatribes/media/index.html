@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="EN">
 
-    
+
 
 <head>
 	<meta charset="UTF-8">
@@ -39,65 +39,89 @@
     <script src='https://philotfarnsworth.github.io/APrettyHuGoinWebsitescripts/jekyllin.js'></script>
     <header>
     <h1>A Pretty HuGOin&#39; Website</h1>
-    <p>A Pretty Heckin&#39; Website using Github Pages and Hugo</p>
-    <nav id="siteNav" aria-expanded="false">
-        <button type="button" id="toggleNav" data-active="false" aria-atomic="true">Expand Site Navigation</button>
-        <button type="button" id="dummyIndexNav" aria-hidden="false" disabled>Home</button>
-        <button type="button" id="whyNav" aria-hidden="true" hidden="true" disabled>Why?</button>
-        <button type="button" id="sectionNav" aria-hidden="true" hidden="true" disabled>Section Headings</button>
-        <button type="button" id="dataNav" aria-hidden="true" hidden="true" disabled>Data Widgets</button>
-        <button type="button" id="tablesNav" aria-hidden="true" hidden="true" disabled>Tables</button>
-        <button type="button" id="listsNav" aria-hidden="true" hidden="true" disabled>Lists</button>
-        <button type="button" id="otherNav" aria-hidden="true" hidden="true" disabled>Others</button>
-        <button type="button" id="formNav" aria-hidden="true" hidden="true" disabled>Forms</button>
-        <button type="button" id="mediaNav" aria-hidden="true" hidden="true" disabled>Media and More</button>
-        <button type="button" id="satireNav" aria-hidden="true" hidden="true" disabled>Satire Warning</button>
-        <button type="button" id="epilogueNav" aria-hidden="true" hidden="true" disabled>Epilogue</button>
-    </nav>
-</header>
-    <main>
+<p>A Pretty Heckin&#39; Website using Github Pages and Hugo</p>
     
+    
+    </header>
+    <main>
+        
 <section>
     <h2>Media, images and other pretty things</h2>
-    <p>aside:
-header: &ldquo;Easy to read?&rdquo;
-content: &ldquo;Padding, Font size and good contrast are the key.&rdquo;
-quote:
-content: &ldquo;I didn&rsquo;t kill my wife! Also something about web design!&rdquo;
-caption: &ldquo;Dr. Richard Kimble&rdquo;
-cite: &ldquo;Seeking the One Armed Man (1963)&rdquo;
-image:
-name: &ldquo;working&rdquo;
-alt: &ldquo;Web developer working diligently&rdquo;
-caption: &ldquo;Needed a wide picture here&rdquo;</p>
-<p>include quote.html</p>
+    <figure>
+    <blockquote>
+        
+I didn't kill my wife! Also something about web design!
+
+    </blockquote>
+    <figcaption>
+        
+            Dr. Richard Kimble
+        
+        
+        ,
+        <cite>
+            Seeking the One Armed Man
+            
+                (1963)
+            
+        </cite>
+        
+    </figcaption>
+</figure>
 <p>Media is also another concern in modern design. Videos should be responsively sized for both desktop and
 mobile. Size and compression is a consideration. We can also embed, if we are concerned with hosting
 video.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RzX-fx_GhrM"
     title="YouTube video player - Harrison Ford Already Works Around the Clock" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     loading="lazy" allowfullscreen></iframe>
 <p>A lot of the same advice goes for images, with an added emphasis on size. Most modern browsers support
-internet optimized image formats like <abbr>webp</abbr> and <abbr>avif</abbr>, which can be
+internet optimized image formats like WebP and 
+    <abbr title='AV1 Image File Format'> avif</abbr>
+, which can be
 substantially smaller than conventional formats.</p>
+<figure>
+    <picture>
+        <source srcset='images/workingMobile.webp' type='image/webp' media='(max-width: 800px)' />
+        <source srcset='images/workingMobile.avif' type='image/avif' media='(max-width: 800px)' />
+        <source srcset='images/workingMobile.png' media='(max-width: 800px)' />
+        <source srcset='images/working.webp' type='image/webp' />
+        <source srcset='images/working.avif' type='image/avif' />
+        <img src='images/working.png' alt='Web developer working diligently' />
+    </picture>
+    
+        <figcaption>Needed a wide picture here</figcaption>
+    
+</figure>
 <div>
-    include aside.html
+    
+    <aside>
+    <h3>Easy to read?</h3>
+    
+    
     <p>
-        Even accounting for the tables and forms, we're still looking at less than 500 lines of CSS. That's with
-        extensive font integration, media responsiveness and accounting for a majority of the elements that
-        exist within the <abbr>HTML</abbr> spec.
+        Padding, Font size and good contrast are the key.
     </p>
+</aside>
+        <p>
+            Even accounting for the tables and forms, we're still looking at less than 500 lines of 
+<abbr>CSS</abbr>
+. That's with
+            extensive font integration, media responsiveness and accounting for a majority of the elements that
+            exist within the 
+<abbr>HTML</abbr>
+ spec.
+        </p>
+
 </div>
-<p>include image.html image=page.image.name alt=page.image.alt caption=page.image.caption</p>
 
 </section>
 
     </main>
     <footer>
-	
+        
     <p>Fake footer</p>
 
     </footer>
 </body>
+
 </html>

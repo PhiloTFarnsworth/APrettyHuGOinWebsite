@@ -4,14 +4,10 @@ weight: 20
 draft: false
 ---
 
-aside:
-    header: "Learning web design?"
-    content: "Get ready to be schooled"
-    image: "dunce"
-    caption: "Armored man dons a pointy dunce cap."
-
-<div>
-    include aside.html
+{{< col >}}
+    {{< aside head="Learning web design?" body="Get ready to be schooled" >}}
+        {{< image image="dunce" alt="Armored man dons a pointy dunce cap." >}}
+    {{</ aside >}}
     <p>
         Modelling a website is no mean feat, and it's often useful to go back and check the html spec
         from time to time as it updates. This is especially important when you're going for an informative tone.
@@ -20,6 +16,6 @@ aside:
         small but sensible set of styling instructions in {{< abbr abbr="CSS" title="Cascading Style Sheets" >}} and a couple
         of handy but optional {{< abbr title="Javascript" abbr="JS" >}} features.
     </p>
-</div>
+{{</ col >}}
 
 <!-- Still relying on our div to make columns and preserve aside spacing.  I want to keep the aside functionality as is but something to think about. -->

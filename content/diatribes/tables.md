@@ -79,5 +79,5 @@ discretion.
 </table>
 <!-- 
     For the time being, we'll keep the regular html table format.  The colored boxes used 
-    in the comparison rely on naming our td's and we don't have that function in markdown
+    in the comparison rely on naming our td's and we don't have that functionality in markdown
 -->

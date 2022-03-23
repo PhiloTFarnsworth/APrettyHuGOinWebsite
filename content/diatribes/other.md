@@ -4,18 +4,15 @@ weight: 70
 draft: false
 ---
 
-aside:
-    header: "Internet Explorer"
-    content: "It still exists."
-
-<div>
-    include aside.html
+{{< col >}}
+    {{< aside head="Internet Explorer" body="It still exists.">}}
+    {{</ aside >}}
     <p>
         These next few widgets have a special note that they are not supported in Internet Explorer.
         {{< abbr IE >}} compatibility isn't as big a concern as it was in the past, but you never know, so keep
         compatibility in mind and don't lock any core functionality behind these features.
     </p>
-</div>
+{{</ col >}}
 
 <h3 id="detailHead">Details</h3>
 

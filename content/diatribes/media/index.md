@@ -4,10 +4,6 @@ weight: 90
 draft: false
 ---
 
-aside:
-    header: "Easy to read?"
-    content: "Padding, Font size and good contrast are the key."
-
 {{< quote author="Dr. Richard Kimble" cite="Seeking the One Armed Man" year="1963" >}}
 I didn't kill my wife! Also something about web design!
 {{</ quote >}}
@@ -25,13 +21,14 @@ A lot of the same advice goes for images, with an added emphasis on size. Most m
 internet optimized image formats like WebP and {{< abbr abbr="avif" title="AV1 Image File Format" >}}, which can be
 substantially smaller than conventional formats.
 
-<div>
-    include aside.html
-    <p>
-        Even accounting for the tables and forms, we're still looking at less than 500 lines of {{< abbr CSS >}}. That's with
-        extensive font integration, media responsiveness and accounting for a majority of the elements that
-        exist within the {{< abbr HTML >}} spec.
-    </p>
-</div>
-
 {{< image image="working" alt="Web developer working diligently" caption="Needed a wide picture here" >}}
+
+{{< col >}}
+    {{< aside head="Easy to read?" body="Padding, Font size and good contrast are the key." >}}
+    {{</ aside >}}
+        <p>
+            Even accounting for the tables and forms, we're still looking at less than 500 lines of {{< abbr CSS >}}. That's with
+            extensive font integration, media responsiveness and accounting for a majority of the elements that
+            exist within the {{< abbr HTML >}} spec.
+        </p>
+{{</ col >}}
