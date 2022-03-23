@@ -22,9 +22,10 @@ See the original [Pretty Heckin' Website](https://philotfarnsworth.github.io/APr
 
 To begin, click the next button on the bottom left of the page.
 
-<p class="disclaimer">
+
+{{< disclaimer >}}
     Disclaimer: This is not an authoritative source on HyperText Markup Language
     ({{< abbr HTML >}}), Cascading Style Sheets ({{< abbr CSS >}}) or Javascript ({{< abbr JS >}}).
     I suggest <a href="https://developer.mozilla.org/">Mozilla Web Docs</a> for web technology documentation.
     Please excuse any intentional attempts at comedy.
-</p>
+{{</ disclaimer >}}
