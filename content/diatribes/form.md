@@ -4,19 +4,16 @@ weight: 80
 draft: false
 ---
 
-aside:
-    header: "Warning"
-    content: "Javascript can allow you to make pseudo form elements. Resist the temptation."
-
-<div>
+{{< col >}}
+    {{< aside head="Form Warning!" body="You could make pseudo form elements with Javascript. Resist the temptation.">}}
+    {{</ aside >}}
     <p>
         It's hard to think of a website that doesn't contain form. Even if your content is a canon of
         theological theses, you're at least going to want to get users to subscribe to your newsletter. Most
         important considerations are to keep it simple, even if you're running frameworks on top of frameworks,
         your forms are going to boil down to something like the one below.
     </p>
-    include aside.html
-</div>
+{{</ col >}}
 
 Interactive elements are also very important styling opportunities. Beyond tweaks to font size and padding
 for legibility, box shadows are an effective way to highlight the special nature of the input boxes.
@@ -65,7 +62,3 @@ Animation allows inputs and buttons to indicate hover and focus without jarring 
 <p id="formResults">Form Not Submitted</p>
 </div>
 <button id="clearResults"> Clear Results </button>
-
-<!-- 
-    Not going down the path of madness and building a markdown form builder.
--->

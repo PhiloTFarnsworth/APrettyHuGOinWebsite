@@ -1,0 +1,10 @@
+<label for='{{ .Get "id" }}'>{{ .Get "label" }}</label>
+<meter 
+    id='{{ .Get "id" }}' 
+    min='{{ if .Get "min" }}{{ .Get "min" }}{{else}}0{{ end }}' 
+    max='{{ if .Get "max" }}{{ .Get "max" }}{{else}}100{{ end }}' 
+    value='{{ .Get "value" }}'
+    low='{{ if .Get "low" }}{{ .Get "low" }}{{else}}60{{ end }}'
+    high='{{ if .Get "high" }}{{ .Get "high" }}{{else}}80{{ end }}' 
+    optimum='{{if .Get "optimum"}}{{ .Get "optimum" }}{{else}}90{{ end }}'></meter>
+<p><strong>{{ .Get "value" }} {{if .Get "valModifier" }}{{ .Get "valModifier" }}{{ end }}</strong></p>

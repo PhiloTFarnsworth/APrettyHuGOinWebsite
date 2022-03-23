@@ -15,7 +15,7 @@ discretion.
     <thead>
         <tr>
             <th scope="col">Websites
-            <th scope="col">Requests<sup>1</sup>
+            <th scope="col">Requests{{< sup 1 >}}
             <th scope="col">Media?
             <th scope="col">Tables?
             <th scope="col">Forms?
@@ -46,38 +46,29 @@ discretion.
             <td name="no">NO
             <td name="no">NO
         <tr>
-            <th scope="row"><a href="#">A Pretty Heckin' Website</a>
-            <td>~122 kB<sup>2</sup>
+            <th scope="row"><a href="https://philotfarnsworth.github.io/APrettyHeckinWebsite/">A Pretty Heckin' Website</a>
+            <td>~122 kB{{< sup 2 >}}
             <td name="yes">YES
             <td name="yes">YES
             <td name="yes">YES
         <tr>
-            <th scope="row"><a href="#">A Pretty Jekyllin' Website</a>
-            <td>~153 kB<sup>3</sup>
+            <th scope="row"><a href="https://philotfarnsworth.github.io/APrettyJekyllinWebsite/">A Pretty Jekyllin' Website</a>
+            <td>~153 kB{{< sup 3 >}}
             <td name="yes">YES
             <td name="yes">YES
             <td name="yes">YES
     <tfoot>
         <tr>
             <td colspan="5">
-                <details>
-                    <summary>1</summary>
-                    <p>As measured by a generated Chromium Lighthouse tool report.</p>
-                </details>
+                {{< details summary="1" body="As measured by a generated Chromium Lighthouse tool report." >}}
         <tr>
             <td colspan="5">
-                <details>
-                    <summary>2</summary>
-                    <p>Excluding Youtube embed.</p>
-                </details>
+                {{< details summary="2" body="Excluding Youtube embed." >}}
         <tr>
             <td colspan="5">
-                <details>
-                    <summary>3</summary>
-                    <p>It's only ~111 kB if you stop reading now.</p>
-                </details>
+                {{< details summary="3" body="It's only ~111 kB if you stop reading now." >}}
 </table>
 <!-- 
     For the time being, we'll keep the regular html table format.  The colored boxes used 
-    in the comparison rely on naming our td's and we don't have that function in markdown
+    in the comparison rely on naming our td's and we don't have that functionality in markdown
 -->

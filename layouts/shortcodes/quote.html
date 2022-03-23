@@ -1,12 +1,21 @@
-{{/*  <figure>
+<figure>
     <blockquote>
-        <p>{{page.quote.content}}</p>
+        {{ .Inner }}
     </blockquote>
-    {% if page.quote.caption %}
-    <figcaption> {{page.quote.caption}}  
-        {% if page.quote.cite %}
-        , <cite>{{page.quote.cite}}</cite>
-        {% endif %}
+    <figcaption>
+        {{if .Get "author" }}
+            {{ .Get "author" }}
+        {{ else }}
+            Anonymous
+        {{end}}
+        {{ if .Get "cite"}}
+        ,
+        <cite>
+            {{ .Get "cite" }}
+            {{ if .Get "year" }}
+                ({{ .Get "year" }})
+            {{ end }}
+        </cite>
+        {{ end }}
     </figcaption>
-    {% endif %}
-</figure>  */}}
+</figure>
