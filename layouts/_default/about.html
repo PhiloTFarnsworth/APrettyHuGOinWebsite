@@ -1,0 +1,11 @@
+{{ define "main"}}
+<section>
+    <h2>{{.Title}}</h2>
+    {{ .Content }}
+    {{ partial "legal" .}}
+</section>
+{{ end }}
+
+{{define "footer"}}
+    {{ partial "staticFooter" . }}
+{{ end }}

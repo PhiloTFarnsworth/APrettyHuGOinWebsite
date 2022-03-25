@@ -1,6 +1,6 @@
 ---
 title: "Media, images and other pretty things"
-weight: 90
+weight: 9
 draft: false
 ---
 

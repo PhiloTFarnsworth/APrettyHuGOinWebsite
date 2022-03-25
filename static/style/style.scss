@@ -111,9 +111,29 @@ footer {
     }
     div {
         padding: .5rem 0 0 0;
-        button {
-            flex: 1;
-            margin: 0;
+        display: flex;
+        a:first-of-type, a:last-of-type {
+            border: 1px solid $Secondary;
+            border-radius: 20px 20px 20px 20px;
+            width: 25%;
+            margin: 1rem;
+            display: block;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: .25rem;
+        }
+        a {
+            outline: none;
+            text-decoration: none;
+            text-align: center;
+            justify-content: space-between;
+            display: inline-block;
+            border: 1px solid $Secondary;
+            border-radius: 100%;
+            width: 1.2rem;
+            height: 1.2rem;
         }
     }
     button {
@@ -152,7 +172,9 @@ a:hover {
 
 nav {
     width: 100%;
-    padding: 1rem 4rem;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: center;
     a {
         font-size: large;
         font-style: "LEMONMILK";
@@ -203,6 +225,13 @@ p {
 p.disclaimer {
     font-style: italic;
     flex: 1;
+}
+
+// Notice is for the static site, we want to direct users back to the SPA version, and want this message to be unobtrusive.
+p.notice {
+    margin-top: 0;
+    font-size: smaller;
+    font-style: italic;
 }
 
 aside {

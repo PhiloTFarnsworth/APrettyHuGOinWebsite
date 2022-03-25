@@ -1,6 +1,7 @@
 ---
 title: "Other Informational Widgets"
-weight: 70
+weight: 7
+script: "progress.js"
 draft: false
 ---
 

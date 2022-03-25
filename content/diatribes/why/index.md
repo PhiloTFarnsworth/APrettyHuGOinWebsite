@@ -1,6 +1,6 @@
 ---
 title: "Why Another Jekyllin' Website"
-weight: 20
+weight: 2
 draft: false
 ---
 
@@ -17,5 +17,3 @@ draft: false
         of handy but optional {{< abbr title="Javascript" abbr="JS" >}} features.
     </p>
 {{</ col >}}
-
-<!-- Still relying on our div to make columns and preserve aside spacing.  I want to keep the aside functionality as is but something to think about. -->
