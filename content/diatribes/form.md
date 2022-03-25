@@ -1,6 +1,7 @@
 ---
 title: "Forms are Fundamental"
 weight: 8
+script: "form.js"
 draft: false
 ---
 

@@ -149,7 +149,9 @@ a:hover {
 
 nav {
   width: 100%;
-  padding: 1rem 4rem;
+  padding: 0rem 2rem;
+  display: flex;
+  justify-content: center;
 }
 nav a {
   font-size: large;
@@ -201,6 +203,12 @@ p {
 p.disclaimer {
   font-style: italic;
   flex: 1;
+}
+
+p.notice {
+  margin-top: 0;
+  font-size: smaller;
+  font-style: italic;
 }
 
 aside {
@@ -358,9 +366,9 @@ button {
 }
 
 button:hover {
-  animation: 1s ease-in 0s both hover-u0zu4kt;
+  animation: 1s ease-in 0s both hover-u0zu4qt;
 }
-@keyframes hover-u0zu4kt {
+@keyframes hover-u0zu4qt {
   to {
     background-color: rgba(218, 209, 180, 0.5);
   }
@@ -385,9 +393,9 @@ input:hover,
 select:hover,
 input:focus,
 select:focus {
-  animation: 1s ease-in 0s both hover-u0zu4ku;
+  animation: 1s ease-in 0s both hover-u0zu4rt;
 }
-@keyframes hover-u0zu4ku {
+@keyframes hover-u0zu4rt {
   to {
     background-color: #eeeeee;
   }

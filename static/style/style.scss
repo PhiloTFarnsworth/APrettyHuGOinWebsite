@@ -172,7 +172,9 @@ a:hover {
 
 nav {
     width: 100%;
-    padding: 1rem 4rem;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: center;
     a {
         font-size: large;
         font-style: "LEMONMILK";
@@ -223,6 +225,13 @@ p {
 p.disclaimer {
     font-style: italic;
     flex: 1;
+}
+
+// Notice is for the static site, we want to direct users back to the SPA version, and want this message to be unobtrusive.
+p.notice {
+    margin-top: 0;
+    font-size: smaller;
+    font-style: italic;
 }
 
 aside {
