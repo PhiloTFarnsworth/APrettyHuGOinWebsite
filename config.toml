@@ -16,6 +16,8 @@ title = "A Pretty HuGOin' Website"
   email = "Idodevthings@gmail.com"
   linkedIn = "www.linkedin.com/in/michael-gardner-az"
   github = "PhiloTFarnsworth"
+  year = "2022"
+  legal = "This site is for educational purposes only. All images, videos and quotes are not the property of the site owner and used with a very tenuous grasp of Fair Use."
   fonts = [
     "LEMONMILK-Light.woff2",
     "LEMONMILK-LightItalic.woff2",

@@ -1,6 +1,6 @@
 ---
 title: "Lists"
-weight: 60
+weight: 6
 draft: false
 ---
 

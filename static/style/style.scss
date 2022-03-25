@@ -111,9 +111,29 @@ footer {
     }
     div {
         padding: .5rem 0 0 0;
-        button {
-            flex: 1;
-            margin: 0;
+        display: flex;
+        a:first-of-type, a:last-of-type {
+            border: 1px solid $Secondary;
+            border-radius: 20px 20px 20px 20px;
+            width: 25%;
+            margin: 1rem;
+            display: block;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: .25rem;
+        }
+        a {
+            outline: none;
+            text-decoration: none;
+            text-align: center;
+            justify-content: space-between;
+            display: inline-block;
+            border: 1px solid $Secondary;
+            border-radius: 100%;
+            width: 1.2rem;
+            height: 1.2rem;
         }
     }
     button {

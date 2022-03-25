@@ -1,6 +1,6 @@
 ---
 title: "Other Informational Widgets"
-weight: 70
+weight: 7
 draft: false
 ---
 

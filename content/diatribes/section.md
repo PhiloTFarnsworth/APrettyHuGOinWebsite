@@ -1,6 +1,6 @@
 ---
 title: "Section Headings: A Modest Proposal"
-weight: 30
+weight: 3
 draft: false
 ---
 

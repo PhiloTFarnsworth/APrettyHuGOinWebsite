@@ -82,10 +82,30 @@ footer p {
 }
 footer div {
   padding: 0.5rem 0 0 0;
+  display: flex;
 }
-footer div button {
-  flex: 1;
-  margin: 0;
+footer div a:first-of-type, footer div a:last-of-type {
+  border: 1px solid #cec19b;
+  border-radius: 20px 20px 20px 20px;
+  width: 25%;
+  margin: 1rem;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0.25rem;
+}
+footer div a {
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  justify-content: space-between;
+  display: inline-block;
+  border: 1px solid #cec19b;
+  border-radius: 100%;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 footer button {
   border-radius: 0px 0px 20px 20px;
@@ -338,9 +358,9 @@ button {
 }
 
 button:hover {
-  animation: 1s ease-in 0s both hover-uaonrfj;
+  animation: 1s ease-in 0s both hover-u0zu4kt;
 }
-@keyframes hover-uaonrfj {
+@keyframes hover-u0zu4kt {
   to {
     background-color: rgba(218, 209, 180, 0.5);
   }
@@ -365,9 +385,9 @@ input:hover,
 select:hover,
 input:focus,
 select:focus {
-  animation: 1s ease-in 0s both hover-uaonrg9;
+  animation: 1s ease-in 0s both hover-u0zu4ku;
 }
-@keyframes hover-uaonrg9 {
+@keyframes hover-u0zu4ku {
   to {
     background-color: #eeeeee;
   }

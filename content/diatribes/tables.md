@@ -1,6 +1,6 @@
 ---
 title: "Tables"
-weight: 50
+weight: 5
 draft: false
 ---
 

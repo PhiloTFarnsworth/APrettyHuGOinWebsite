@@ -1,6 +1,6 @@
 ---
 title: "Data Organization"
-weight: 40
+weight: 4
 draft: false
 ---
 
