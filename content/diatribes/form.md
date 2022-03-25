@@ -1,7 +1,7 @@
 ---
 title: "Forms are Fundamental"
 weight: 8
-summary: "It's hard to think of a website that doesn't contain form. Even if your content is a canon of
+summary: "It's hard to think of a website that doesn't contain forms. Even if your content is a canon of
         theological theses, you're at least going to want to get users to subscribe to your newsletter."
 script: "form.js"
 draft: false
@@ -11,7 +11,7 @@ draft: false
     {{< aside head="Form Warning!" body="You could make pseudo form elements with Javascript. Resist the temptation.">}}
     {{</ aside >}}
     <p>
-        It's hard to think of a website that doesn't contain form. Even if your content is a canon of
+        It's hard to think of a website that doesn't contain forms. Even if your content is a canon of
         theological theses, you're at least going to want to get users to subscribe to your newsletter. Most
         important considerations are to keep it simple, even if you're running frameworks on top of frameworks,
         your forms are going to boil down to something like the one below.

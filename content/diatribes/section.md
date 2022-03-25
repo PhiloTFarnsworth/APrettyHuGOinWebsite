@@ -1,7 +1,7 @@
 ---
 title: "Section Headings: A Modest Proposal"
 weight: 3
-summary: "Headings are shamelessly abused by many modern websites."
+summary: "Headings are shamelessly abused by many modern websites.  This ends today!"
 draft: false
 ---
 
