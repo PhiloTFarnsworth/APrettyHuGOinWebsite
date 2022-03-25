@@ -1,6 +1,7 @@
 ---
 title: "Lists"
 weight: 6
+summary: "Whereas tables are ideal for comparisons, lists are good condensing repetitive or related data."
 draft: false
 ---
 

@@ -96,6 +96,10 @@ footer div a:first-of-type, footer div a:last-of-type {
   text-overflow: ellipsis;
   padding: 0.25rem;
 }
+footer div a:only-of-type {
+  height: 1.5rem;
+  width: 100%;
+}
 footer div a {
   outline: none;
   text-decoration: none;
@@ -366,9 +370,9 @@ button {
 }
 
 button:hover {
-  animation: 1s ease-in 0s both hover-u0zu4qt;
+  animation: 1s ease-in 0s both hover-u0h9t8v;
 }
-@keyframes hover-u0zu4qt {
+@keyframes hover-u0h9t8v {
   to {
     background-color: rgba(218, 209, 180, 0.5);
   }
@@ -393,9 +397,9 @@ input:hover,
 select:hover,
 input:focus,
 select:focus {
-  animation: 1s ease-in 0s both hover-u0zu4rt;
+  animation: 1s ease-in 0s both hover-u0h9t9v;
 }
-@keyframes hover-u0zu4rt {
+@keyframes hover-u0h9t9v {
   to {
     background-color: #eeeeee;
   }

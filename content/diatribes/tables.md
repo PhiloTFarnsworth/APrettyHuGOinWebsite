@@ -1,6 +1,8 @@
 ---
 title: "Tables"
 weight: 5
+summary: "You want to measure this website against some other well respected peers? A table can
+provide that information at a glance."
 draft: false
 ---
 
@@ -8,7 +10,6 @@ For instance, let's say you want to measure this website against some other well
 provide that information at a glance. Well respected peers in this case includes several profanity laced
 tirades about minimalist website design that for better or worse inspired this project. Peruse at your own
 discretion.
-
 
 <table>
     <caption>Tables Are Great for Comparisons</caption>

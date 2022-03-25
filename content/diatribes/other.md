@@ -2,6 +2,7 @@
 title: "Other Informational Widgets"
 weight: 7
 script: "progress.js"
+summary: "Details, Progress Bars and Meters! Oh My!"
 draft: false
 ---
 

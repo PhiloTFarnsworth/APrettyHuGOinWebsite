@@ -1,6 +1,8 @@
 ---
 title: "Forms are Fundamental"
 weight: 8
+summary: "It's hard to think of a website that doesn't contain form. Even if your content is a canon of
+        theological theses, you're at least going to want to get users to subscribe to your newsletter."
 script: "form.js"
 draft: false
 ---

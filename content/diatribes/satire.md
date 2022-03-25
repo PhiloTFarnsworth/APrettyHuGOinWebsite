@@ -1,6 +1,8 @@
 ---
 title: "Pretty Heckin' Website is not a satire"
 weight: 10
+summary: "Every website should look like this, and any which do not conform should be removed from the internet
+with extreme prejudice."
 draft: false
 ---
 
