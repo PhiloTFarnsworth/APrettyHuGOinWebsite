@@ -2,7 +2,7 @@
 title: About
 weight: 12
 layout: "about"
-summary: "This page is an iteration of [A Pretty Heckin' Website](https://philotfarnsworth.github.io/APrettyHeckinWebsite/)."
+summary: "What do you want to know?"
 draft: false
 ---
 

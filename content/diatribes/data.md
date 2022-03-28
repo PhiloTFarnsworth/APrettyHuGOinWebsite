@@ -1,8 +1,7 @@
 ---
 title: "Data Organization"
 weight: 4
-summary: "While you can deliver text in easy to digest chunks, HTML provides several tags that can
-        provide comparisons, lists and other information."
+summary: "TODO: This page really needs some reason to exist."
 draft: false
 ---
 

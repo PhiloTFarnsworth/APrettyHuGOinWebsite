@@ -1,7 +1,7 @@
 ---
 title: "Media, images and other pretty things"
 weight: 9
-summary: "Media is another concern in modern design."
+summary: "Putting the 'multi-' in fully immersive multimedia experience."
 draft: false
 ---
 

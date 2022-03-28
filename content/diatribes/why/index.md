@@ -1,8 +1,7 @@
 ---
 title: "Why Another Jekyllin' Website"
 weight: 2
-summary: 'This site seeks to model a text heavy informative website (like a blog) while also utilizing many of the
-        current available HTML features.'
+summary: 'A website with pedantic purpose!'
 draft: false
 ---
 

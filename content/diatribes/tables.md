@@ -1,8 +1,7 @@
 ---
 title: "Tables"
 weight: 5
-summary: "You want to measure this website against some other well respected peers? A table can
-provide that information at a glance."
+summary: "Want to make a comparison?  Use a table!"
 draft: false
 ---
 

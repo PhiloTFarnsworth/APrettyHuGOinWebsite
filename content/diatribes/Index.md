@@ -1,7 +1,7 @@
 ---
 title: "Foreword"
 weight: 1
-summary: "A Pretty HuGOin' website is a proving ground for some basic [Hugo](https://gohugo.io) framework customization for use with [Github Pages](https://docs.github.com/en/pages)."
+summary: "Messing around with [Hugo](https://gohugo.io) on [Github Pages](https://docs.github.com/en/pages)."
 draft: false
 ---
 
