@@ -1,10 +1,11 @@
 ---
 title: "Lists"
 weight: 6
+summary: "Lists are great for condensing repetitive or related data."
 draft: false
 ---
 
-Whereas tables are ideal for comparisons, lists are good condensing repetitive or related data. While this
+Whereas tables are ideal for comparisons, lists are good for condensing repetitive or related data. While this
 can be convenient in cutting down paragraphs into more digestable content, they should be used
 judiciously. As a general rule of thumb, lists over five items should either be refactored into nested
 lists, or refactored into separate lists.

@@ -1,6 +1,7 @@
 ---
 title: "Media, images and other pretty things"
 weight: 9
+summary: "Putting the 'multi-' in fully immersive multimedia experience."
 draft: false
 ---
 
@@ -8,7 +9,7 @@ draft: false
 I didn't kill my wife! Also something about web design!
 {{</ quote >}}
 
-Media is also another concern in modern design. Videos should be responsively sized for both desktop and
+Media is another concern in modern design. Videos should be responsively sized for both desktop and
 mobile. Size and compression is a consideration. We can also embed, if we are concerned with hosting
 video.
 

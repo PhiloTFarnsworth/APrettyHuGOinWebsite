@@ -1,5 +1,6 @@
 {{ define "main" }}
     <section>
+        <p class="notice">Check out the SPA version of <a href='{{ .Site.BaseURL }}'>A Pretty HuGOin' Website</a>!</p>
         <h2>{{.Title}}</h2>
         {{ .Content }}
     </section>
@@ -8,6 +9,9 @@
         {{ range .Pages}}
             <li>
                 <a href="{{.Permalink}}">{{.Title}}</a>
+                <ul>
+                    <li>{{.Summary}}</li>
+                </ul>
             </li>
         {{ end }}
         </ul>
@@ -15,5 +19,5 @@
 {{ end }}
 
 {{ define "footer" }}
-    <button>Return to nav explorer</button>
+        {{ partial "listFooter" .}}
 {{ end }}

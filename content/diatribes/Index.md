@@ -1,10 +1,11 @@
 ---
 title: "Foreword"
 weight: 1
+summary: "Messing around with [Hugo](https://gohugo.io) on [Github Pages](https://docs.github.com/en/pages)."
 draft: false
 ---
 
-A Pretty Jekyllin' website is a proving ground for some basic [Jekyll](https://jekyllrb.com) framework customization for use with [Github Pages](https://docs.github.com/en/pages).  While the basic templates encourage usage for websites like blogs, I though it would be an interesting to build a template that would work like a book or manual.  
+A Pretty HuGOin' website is a proving ground for some basic [Hugo](https://gohugo.io) framework customization for use with [Github Pages](https://docs.github.com/en/pages).  While the basic templates encourage usage for websites like blogs, I though it would be an interesting to build a template that would work like a book or manual.  
 
 See the original [Pretty Heckin' Website](https://philotfarnsworth.github.io/APrettyHeckinWebsite/)
 

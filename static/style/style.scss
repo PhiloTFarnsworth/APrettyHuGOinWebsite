@@ -124,6 +124,10 @@ footer {
             text-overflow: ellipsis;
             padding: .25rem;
         }
+        a:only-of-type {
+            height: 1.5rem;
+            width: 100%;
+        }
         a {
             outline: none;
             text-decoration: none;

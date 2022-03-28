@@ -1,6 +1,7 @@
 ---
 title: "Epilogue"
 weight: 11
+summary: "Inspired by [The Best M&!@#F$%^&@! Website](https://thebestmotherfucking.website/)."
 draft: false
 ---
 

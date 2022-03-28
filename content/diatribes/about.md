@@ -2,6 +2,7 @@
 title: About
 weight: 12
 layout: "about"
+summary: "What do you want to know?"
 draft: false
 ---
 
