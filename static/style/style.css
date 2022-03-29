@@ -370,9 +370,9 @@ button {
 }
 
 button:hover {
-  animation: 1s ease-in 0s both hover-u3e6duo;
+  animation: 1s ease-in 0s both hover-uekiz7b;
 }
-@keyframes hover-u3e6duo {
+@keyframes hover-uekiz7b {
   to {
     background-color: rgba(218, 209, 180, 0.5);
   }
@@ -397,9 +397,9 @@ input:hover,
 select:hover,
 input:focus,
 select:focus {
-  animation: 1s ease-in 0s both hover-u3e6dv7;
+  animation: 1s ease-in 0s both hover-uekiz85;
 }
-@keyframes hover-u3e6dv7 {
+@keyframes hover-uekiz85 {
   to {
     background-color: #eeeeee;
   }

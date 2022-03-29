@@ -1,5 +1,6 @@
 ---
 title: "Data Organization"
+shortTitle: "Data"
 weight: 4
 summary: "TODO: This page really needs some reason to exist."
 draft: false

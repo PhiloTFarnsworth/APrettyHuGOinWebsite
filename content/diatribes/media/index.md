@@ -1,5 +1,6 @@
 ---
 title: "Media, images and other pretty things"
+shortTitle: "Multimedia"
 weight: 9
 summary: "Putting the 'multi-' in fully immersive multimedia experience."
 draft: false

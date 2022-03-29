@@ -1,5 +1,6 @@
 ---
 title: "Forms are Fundamental"
+shortTitle: "Forms"
 weight: 8
 summary: "What's a website without a form?"
 script: "form.js"

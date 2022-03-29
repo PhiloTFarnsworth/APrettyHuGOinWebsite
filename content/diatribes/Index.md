@@ -1,5 +1,6 @@
 ---
 title: "Foreword"
+shortTitle: "Foreword"
 weight: 1
 summary: "Messing around with [Hugo](https://gohugo.io) on [Github Pages](https://docs.github.com/en/pages)."
 draft: false

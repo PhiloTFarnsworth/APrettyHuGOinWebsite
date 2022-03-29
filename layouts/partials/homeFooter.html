@@ -1,0 +1,15 @@
+<footer>
+    <nav>
+        <button id="prevPage">null</button>
+        {{ range (where .Site.RegularPages "Section" "diatribes") }}
+            <div title="{{ .Title }}">
+                <label for="rad{{ .Weight }}"> {{ .Params.shortTitle }}</label>
+                <input type="radio" id="rad{{ .Weight }}" name="radioNav" value="{{.Permalink}}index.json">
+            </div>
+        {{ end }}
+        <button id="nextPage">null</button>
+    </nav>
+    <p aria-atomic="true" aria-live="polite">
+        page <span id="currentPage">null</span> of {{ len (where .Site.RegularPages  "Section" "diatribes")  }} 
+    </p>
+</footer>

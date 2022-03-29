@@ -1,0 +1,5 @@
+{
+    "title": "<h2>{{ .Title }}</h2>",
+    "weight": "{{ .Weight }}",
+    "content": {{ jsonify .Content }}
+}
