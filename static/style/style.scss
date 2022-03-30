@@ -109,42 +109,6 @@ footer {
         text-align: center;
         margin: 0;
     }
-    div {
-        padding: .5rem 0 0 0;
-        display: flex;
-        a:first-of-type, a:last-of-type {
-            border: 1px solid $Secondary;
-            border-radius: 20px 20px 20px 20px;
-            width: 25%;
-            margin: 1rem;
-            display: block;
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            padding: .25rem;
-        }
-        a:only-of-type {
-            height: 1.5rem;
-            width: 100%;
-        }
-        a {
-            outline: none;
-            text-decoration: none;
-            text-align: center;
-            justify-content: space-between;
-            display: inline-block;
-            border: 1px solid $Secondary;
-            border-radius: 100%;
-            width: 1.2rem;
-            height: 1.2rem;
-        }
-    }
-    button {
-        border-radius: 0px 0px 20px 20px;
-        margin: 0;
-        width: 100%;
-    }
 }
 
 section {
@@ -179,32 +143,60 @@ a:hover {
 nav {
     display: flex;
     justify-content: space-evenly;
-    a {
-        font-size: large;
-        font-style: "LEMONMILK";
-        text-decoration: none;
-        color: $PrimaryFont;
-    }
     a:visited {
         color: $PrimaryFont;
     }
     a:hover {
         color: $Primary;
-        text-decoration: underline;
+    }
+    a {
+        font-style: "LEMONMILK";
+        flex: 1;
+        text-align: center;
+        text-decoration: none;
+        align-self: end;
+        border: 1px solid $Primary;
+        background-color: $TertiaryBg;
+        border-radius: 20px;
+        margin: 0.25rem .75rem;
+        padding: .25rem;
+    }
+    a:only-of-type {
+        height: 1.5rem;
+        width: 100%;
     }
     button {
+        font-style: "LEMONMILK";
+        color: $PrimaryFont;
         border-radius: 20px;
-        height: 2.25rem;
+        height: 2.25em;
         min-width: 4rem;
         margin: 0.25rem .75rem;
         padding: .25rem;
         align-self: end;
+        flex: 1;
     }
     div{
+        display: flex;
         justify-content: center;
+        padding: .75rem 0 0 0;
         label {
             position: absolute;
             top: 5px;
+        }
+        a {
+            outline: none;
+            text-align: center;
+            color: $PrimaryFont;
+            border: 2px solid $Primary;
+            background-color: $SecondaryBg;
+            margin: .5rem .15rem;
+            font-weight: 900;
+            font-size: 2rem;
+            color: $PrimaryFont;
+            display: block;
+            line-height: 75%;
+            padding: .25rem .5rem;
         }
     }
 }

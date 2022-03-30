@@ -80,42 +80,6 @@ footer p {
   text-align: center;
   margin: 0;
 }
-footer div {
-  padding: 0.5rem 0 0 0;
-  display: flex;
-}
-footer div a:first-of-type, footer div a:last-of-type {
-  border: 1px solid #cec19b;
-  border-radius: 20px 20px 20px 20px;
-  width: 25%;
-  margin: 1rem;
-  display: block;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding: 0.25rem;
-}
-footer div a:only-of-type {
-  height: 1.5rem;
-  width: 100%;
-}
-footer div a {
-  outline: none;
-  text-decoration: none;
-  text-align: center;
-  justify-content: space-between;
-  display: inline-block;
-  border: 1px solid #cec19b;
-  border-radius: 100%;
-  width: 1.2rem;
-  height: 1.2rem;
-}
-footer button {
-  border-radius: 0px 0px 20px 20px;
-  margin: 0;
-  width: 100%;
-}
 
 section {
   display: flex;
@@ -155,33 +119,61 @@ nav {
   display: flex;
   justify-content: space-evenly;
 }
-nav a {
-  font-size: large;
-  font-style: "LEMONMILK";
-  text-decoration: none;
-  color: #47545c;
-}
 nav a:visited {
   color: #47545c;
 }
 nav a:hover {
   color: #657884;
-  text-decoration: underline;
+}
+nav a {
+  font-style: "LEMONMILK";
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  align-self: end;
+  border: 1px solid #657884;
+  background-color: rgba(216, 185, 175, 0.7);
+  border-radius: 20px;
+  margin: 0.25rem 0.75rem;
+  padding: 0.25rem;
+}
+nav a:only-of-type {
+  height: 1.5rem;
+  width: 100%;
 }
 nav button {
+  font-style: "LEMONMILK";
+  color: #47545c;
   border-radius: 20px;
-  height: 2.25rem;
+  height: 2.25em;
   min-width: 4rem;
   margin: 0.25rem 0.75rem;
   padding: 0.25rem;
   align-self: end;
+  flex: 1;
 }
 nav div {
+  display: flex;
   justify-content: center;
+  padding: 0.75rem 0 0 0;
 }
 nav div label {
   position: absolute;
   top: 5px;
+}
+nav div a {
+  outline: none;
+  text-align: center;
+  color: #47545c;
+  border: 2px solid #657884;
+  background-color: rgba(218, 209, 180, 0.5);
+  margin: 0.5rem 0.15rem;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #47545c;
+  display: block;
+  line-height: 75%;
+  padding: 0.25rem 0.5rem;
 }
 
 input[type=radio], input[type=checkbox] {
@@ -216,9 +208,9 @@ input[type=radio]:hover,
 input[type=radio]:focus,
 input[type=checkbox]:hover,
 input[type=checkbox]:focus {
-  animation: 1s ease-in 0s both hover-u846l14;
+  animation: 1s ease-in 0s both hover-uzuzif6;
 }
-@keyframes hover-u846l14 {
+@keyframes hover-uzuzif6 {
   to {
     background-color: rgba(216, 185, 175, 0.7);
   }
@@ -417,9 +409,9 @@ button {
 }
 
 button:hover {
-  animation: 1s ease-in 0s both hover-u846l1d;
+  animation: 1s ease-in 0s both hover-uzuzifj;
 }
-@keyframes hover-u846l1d {
+@keyframes hover-uzuzifj {
   to {
     background-color: rgba(218, 209, 180, 0.5);
   }
@@ -444,9 +436,9 @@ input:hover,
 select:hover,
 input:focus,
 select:focus {
-  animation: 1s ease-in 0s both hover-u846l25;
+  animation: 1s ease-in 0s both hover-uzuzig6;
 }
-@keyframes hover-u846l25 {
+@keyframes hover-uzuzig6 {
   to {
     background-color: #eeeeee;
   }
