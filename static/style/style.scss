@@ -174,11 +174,10 @@ a:hover {
     color: $SecondaryFont;
 }
 
+//Nav Elements
+
 nav {
-    width: 100%;
-    padding: 0rem 2rem;
     display: flex;
-    justify-content: center;
     a {
         font-size: large;
         font-style: "LEMONMILK";
@@ -194,10 +193,49 @@ nav {
     }
     button {
         width: 100%;
-        height: 1.75rem;
         border-radius: 20px;
-        margin: 0.25rem;
+        margin: 0.25rem 2rem;
+        padding: .25rem;
+        align-self: center;
     }
+    div{
+        justify-content: center;
+        label {
+            position: absolute;
+            top: 5px;
+        }
+    }
+}
+
+input[type=radio], input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+input[type=radio], input[type=checkbox] {
+    border: 2px solid $Primary;
+    border-radius: 20px;
+    background-color: $SecondaryBg;
+    margin: .5rem;
+    align-self: center;
+}
+input[type=radio]::before, input[type=checkbox]::before {
+    content: '!';
+    font-family: 'LEMONMILK';
+    font-weight: 900;
+    font-size: 2rem;
+    color: $PrimaryFont;
+    visibility: hidden;
+    display: block;
+    line-height: 50%;
+}
+input[type=radio]:checked::before, input[type=checkbox]:checked::before {
+    visibility: visible;
+}
+input[type=radio]:hover,
+input[type=radio]:focus,
+input[type=checkbox]:hover,
+input[type=checkbox]:focus {
+    @include hover-animated($TertiaryBg)
 }
 
 //More specific elements

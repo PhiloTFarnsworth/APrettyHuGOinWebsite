@@ -66,6 +66,7 @@ const navButtonHandler = async (activeNavElement) => {
                 if (prev.tagName === 'BUTTON') {
                     //On the static site, first page leads to the About.
                     child.innerHTML = 'About'
+                    child.setAttribute('title', "About A Pretty HuGOin' Website")
                     child.onclick = () => {
                         //Holy one liner Batman.  For the time being, we'll assume every collection has an About.
                         displayPage(
@@ -74,7 +75,8 @@ const navButtonHandler = async (activeNavElement) => {
                                     element.getAttribute('title') === 'About').lastElementChild)
                     }
                 } else {
-                    child.innerHTML = 'Previous Page - ' + prev.getAttribute('title')
+                    child.innerHTML = 'Prev'
+                    child.setAttribute('title', 'Previous Page - ' + prev.getAttribute("title"))
                     // Do button stuff
                     child.onclick = () => {
                         displayPage(prev.lastElementChild)
@@ -83,7 +85,8 @@ const navButtonHandler = async (activeNavElement) => {
             } else {
                 if (next.tagName === 'BUTTON') {
                     //Static site says we usher the people back to the beginning.
-                    child.innerHTML = "Back to the Beginning?"
+                    child.innerHTML = "Start"
+                    child.setAttribute('title', "Back to the Beginning?")
                     // I'm totally cheating right now.  If an About page is a reasonable assumption, foreword is a terrible one.
                     child.onclick = () => {
                         displayPage(
@@ -92,7 +95,8 @@ const navButtonHandler = async (activeNavElement) => {
                                     element.getAttribute('title') === 'Foreword').lastElementChild)
                     }
                 } else {
-                    child.innerHTML = 'Next Page - ' + next.getAttribute('title')
+                    child.innerHTML = "Next"
+                    child.setAttribute('title', 'Next Page - ' + next.getAttribute('title'))
                     // Do button stuff
                     child.onclick = () => {
                         displayPage(next.lastElementChild)
