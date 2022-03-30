@@ -152,10 +152,8 @@ a:hover {
 }
 
 nav {
-  width: 100%;
-  padding: 0rem 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 nav a {
   font-size: large;
@@ -171,10 +169,59 @@ nav a:hover {
   text-decoration: underline;
 }
 nav button {
-  width: 100%;
-  height: 1.75rem;
   border-radius: 20px;
-  margin: 0.25rem;
+  height: 2.25rem;
+  min-width: 4rem;
+  margin: 0.25rem 0.75rem;
+  padding: 0.25rem;
+  align-self: end;
+}
+nav div {
+  justify-content: center;
+}
+nav div label {
+  position: absolute;
+  top: 5px;
+}
+
+input[type=radio], input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type=radio], input[type=checkbox] {
+  border: 2px solid #657884;
+  border-radius: 20px;
+  background-color: rgba(218, 209, 180, 0.5);
+  margin: 0.5rem 0.15rem;
+  align-self: center;
+}
+
+input[type=radio]::before, input[type=checkbox]::before {
+  content: "!";
+  font-family: "LEMONMILK";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #47545c;
+  visibility: hidden;
+  display: block;
+  line-height: 50%;
+}
+
+input[type=radio]:checked::before, input[type=checkbox]:checked::before {
+  visibility: visible;
+}
+
+input[type=radio]:hover,
+input[type=radio]:focus,
+input[type=checkbox]:hover,
+input[type=checkbox]:focus {
+  animation: 1s ease-in 0s both hover-u846l14;
+}
+@keyframes hover-u846l14 {
+  to {
+    background-color: rgba(216, 185, 175, 0.7);
+  }
 }
 
 h1,
@@ -370,9 +417,9 @@ button {
 }
 
 button:hover {
-  animation: 1s ease-in 0s both hover-u3e6duo;
+  animation: 1s ease-in 0s both hover-u846l1d;
 }
-@keyframes hover-u3e6duo {
+@keyframes hover-u846l1d {
   to {
     background-color: rgba(218, 209, 180, 0.5);
   }
@@ -397,9 +444,9 @@ input:hover,
 select:hover,
 input:focus,
 select:focus {
-  animation: 1s ease-in 0s both hover-u3e6dv7;
+  animation: 1s ease-in 0s both hover-u846l25;
 }
-@keyframes hover-u3e6dv7 {
+@keyframes hover-u846l25 {
   to {
     background-color: #eeeeee;
   }

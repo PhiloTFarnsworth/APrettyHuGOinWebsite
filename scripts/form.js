@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
+//Set up handling for example form.
+const exampleFormHandler = () => {
     const form = document.querySelector("#exampleForm")
     if (form) {
         //handle form
@@ -21,4 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector('#formResults').innerHTML = "Form Cleared"
         }
     }
+}
+
+// For static site.
+document.addEventListener("DOMContentLoaded", () => {
+    exampleFormHandler()
 })
+
+export { exampleFormHandler };
