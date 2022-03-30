@@ -1,3 +1,6 @@
+import { exampleFormHandler } from "./form.js"
+import { progressHandler } from "./progress.js"
+
 // Returns a promise to load content.  Expects a navElement (radio button) to a json file.  Sets 'main' element content and updates current page with
 // current 'weight', updates browser history.
 export const displayPage = async (navElement) => {
@@ -16,12 +19,11 @@ export const displayPage = async (navElement) => {
     navElement.checked = true
     toggleLabels(navElement.parentElement)
     navButtonHandler(navElement)
+    //Run progress handler no matter what, since it will unmount the listener if the progress widget is not available
+    progressHandler()
+    //example form handler doesn't do anything if a form doesn't exist.
+    exampleFormHandler()
 }
-
-// Space is always at a premium, so we'll toggle labels to hidden for non-selected navigation buttons.
-// They still have a title set on the containing div, so that information can be accessed, but I feel like
-// we get a book feel, where we can tell where we are in the corpus at a glance, then we can peek at what the 
-// next 'page' is by mousing over a nav bubble.
 
 // toggleLabels take a navElement which has been selected and makes its label visible, while also hiding all unselected
 // navigational elements labels.  We take a nav element, then use iterate over the parent element, if the element returned is
@@ -46,8 +48,6 @@ const toggleLabels = (navElement) => {
 // navClickHandler will take the entire nav element, then iterate over all children to set or update their 
 // onclick functionality
 const navButtonHandler = async (activeNavElement) => {
-    //We'll handle the whole nav in one swoop, so we need to assign buttons on click based on current position, as well
-    //as well as add navigation functionality to each of the radio buttons.
 
     //First we need to identify just where we are.  'prev' and 'next' are the divs adjacent to active element.  From this,
     //we can populate the next and previous buttons.
@@ -55,6 +55,8 @@ const navButtonHandler = async (activeNavElement) => {
     const next = activeNavElement.parentElement.nextElementSibling
     // Active nav is the radio button, so its grandparent is our total nav
     const nav = activeNavElement.parentElement.parentElement
+    //Get all navigation bubble divs, to access first and last items quickly 
+    const navDivs = Array.from(nav.children).filter((element) => element.tagName === "DIV")
 
     Array.from(nav.children).forEach((child) => {
         // First, Find Buttons
@@ -68,11 +70,7 @@ const navButtonHandler = async (activeNavElement) => {
                     child.innerHTML = 'About'
                     child.setAttribute('title', "About A Pretty HuGOin' Website")
                     child.onclick = () => {
-                        //Holy one liner Batman.  For the time being, we'll assume every collection has an About.
-                        displayPage(
-                            Array.from(nav.children).find(
-                                (element) =>
-                                    element.getAttribute('title') === 'About').lastElementChild)
+                        displayPage(navDivs[navDivs.length - 1].lastElementChild)
                     }
                 } else {
                     child.innerHTML = 'Prev'
@@ -88,11 +86,8 @@ const navButtonHandler = async (activeNavElement) => {
                     child.innerHTML = "Start"
                     child.setAttribute('title', "Back to the Beginning?")
                     // I'm totally cheating right now.  If an About page is a reasonable assumption, foreword is a terrible one.
-                    child.onclick = () => {
-                        displayPage(
-                            Array.from(nav.children).find(
-                                (element) =>
-                                    element.getAttribute('title') === 'Foreword').lastElementChild)
+                    child.onclick = () => { 
+                        displayPage(navDivs[0].lastElementChild)
                     }
                 } else {
                     child.innerHTML = "Next"

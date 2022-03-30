@@ -178,6 +178,7 @@ a:hover {
 
 nav {
     display: flex;
+    justify-content: space-evenly;
     a {
         font-size: large;
         font-style: "LEMONMILK";
@@ -192,11 +193,12 @@ nav {
         text-decoration: underline;
     }
     button {
-        width: 100%;
         border-radius: 20px;
-        margin: 0.25rem 2rem;
+        height: 2.25rem;
+        min-width: 4rem;
+        margin: 0.25rem .75rem;
         padding: .25rem;
-        align-self: center;
+        align-self: end;
     }
     div{
         justify-content: center;
@@ -215,7 +217,7 @@ input[type=radio], input[type=checkbox] {
     border: 2px solid $Primary;
     border-radius: 20px;
     background-color: $SecondaryBg;
-    margin: .5rem;
+    margin: .5rem .15rem;
     align-self: center;
 }
 input[type=radio]::before, input[type=checkbox]::before {

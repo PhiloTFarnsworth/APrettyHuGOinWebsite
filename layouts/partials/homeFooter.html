@@ -4,7 +4,7 @@
         {{ range (where .Site.RegularPages "Section" "diatribes") }}
             <div title="{{ .Title }}">
                 <label for="rad{{ .Weight }}"> {{ .Params.shortTitle }}</label>
-                <input type="radio" id="rad{{ .Weight }}" name="radioNav" value="{{.Permalink}}index.json">
+                <input type="radio" aria-label="{{.Params.shortTitle}}" id="rad{{ .Weight }}" name="radioNav" value="{{.Permalink}}index.json">
             </div>
         {{ end }}
         <button id="nextPage">null</button>

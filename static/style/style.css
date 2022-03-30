@@ -153,6 +153,7 @@ a:hover {
 
 nav {
   display: flex;
+  justify-content: space-evenly;
 }
 nav a {
   font-size: large;
@@ -168,11 +169,12 @@ nav a:hover {
   text-decoration: underline;
 }
 nav button {
-  width: 100%;
   border-radius: 20px;
-  margin: 0.25rem 2rem;
+  height: 2.25rem;
+  min-width: 4rem;
+  margin: 0.25rem 0.75rem;
   padding: 0.25rem;
-  align-self: center;
+  align-self: end;
 }
 nav div {
   justify-content: center;
@@ -191,7 +193,7 @@ input[type=radio], input[type=checkbox] {
   border: 2px solid #657884;
   border-radius: 20px;
   background-color: rgba(218, 209, 180, 0.5);
-  margin: 0.5rem;
+  margin: 0.5rem 0.15rem;
   align-self: center;
 }
 
@@ -214,9 +216,9 @@ input[type=radio]:hover,
 input[type=radio]:focus,
 input[type=checkbox]:hover,
 input[type=checkbox]:focus {
-  animation: 1s ease-in 0s both hover-u846jlg;
+  animation: 1s ease-in 0s both hover-u846l14;
 }
-@keyframes hover-u846jlg {
+@keyframes hover-u846l14 {
   to {
     background-color: rgba(216, 185, 175, 0.7);
   }
@@ -415,9 +417,9 @@ button {
 }
 
 button:hover {
-  animation: 1s ease-in 0s both hover-u846jm1;
+  animation: 1s ease-in 0s both hover-u846l1d;
 }
-@keyframes hover-u846jm1 {
+@keyframes hover-u846l1d {
   to {
     background-color: rgba(218, 209, 180, 0.5);
   }
@@ -442,9 +444,9 @@ input:hover,
 select:hover,
 input:focus,
 select:focus {
-  animation: 1s ease-in 0s both hover-u846jme;
+  animation: 1s ease-in 0s both hover-u846l25;
 }
-@keyframes hover-u846jme {
+@keyframes hover-u846l25 {
   to {
     background-color: #eeeeee;
   }

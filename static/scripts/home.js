@@ -1,5 +1,3 @@
-import { exampleFormHandler } from "./form.js"
-import { progressHandler } from "./progress.js"
 import { displayPage, navRadioHandler } from "./nav.js"
 
 //We load with much of a functionality intact, but to allow for users to comfortably switch between
