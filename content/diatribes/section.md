@@ -1,5 +1,6 @@
 ---
 title: "Section Headings: A Modest Proposal"
+shortTitle: "Headings"
 weight: 3
 summary: "Don't be a Goofus, use headings correctly."
 draft: false

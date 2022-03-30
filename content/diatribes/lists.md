@@ -1,5 +1,6 @@
 ---
 title: "Lists"
+shortTitle: "Lists"
 weight: 6
 summary: "Lists are great for condensing repetitive or related data."
 draft: false

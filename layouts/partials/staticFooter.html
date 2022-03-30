@@ -16,7 +16,7 @@
         {{ if .Prev }}
             <a title="Next Page - {{ .Prev.Title }}" href="{{ .Prev.Permalink }}">{{ .Prev.Title }}</a>
         {{ else }}
-            <a title='Back to the Beginning?' href='{{ with .GetPage "index" }}{{ .Permalink }}{{ end }}'> Back to Foreword? </a>
+            <a title='Back to the Beginning?' href='{{ with .GetPage "index" }}{{ .Permalink }}{{ end }}'> Back to the Beginning? </a>
         {{ end }}
     </div>
     <p aria-atomic="true" aria-live="polite">

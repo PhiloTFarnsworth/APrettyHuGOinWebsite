@@ -1,5 +1,6 @@
 ---
 title: "Pretty Heckin' Website is not a satire"
+shortTitle: "Satire"
 weight: 10
 summary: "Every website should look like this."
 draft: false

@@ -1,5 +1,6 @@
 ---
-title: "Why Another Jekyllin' Website"
+title: "Why Another Jekyllin' Website?"
+shortTitle: "Why?"
 weight: 2
 summary: 'A website with pedantic purpose!'
 draft: false

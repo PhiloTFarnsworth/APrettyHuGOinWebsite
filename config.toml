@@ -9,6 +9,9 @@ title = "A Pretty HuGOin' Website"
     [markup.goldmark.renderer]
       unsafe = 'true'
 
+[outputs]
+  page = ['HTML', 'JSON']
+
 [params]
   description = "A Pretty Heckin' Website using Github Pages and Hugo"
   keywords = "Website, Heckin, Web Development, Hugo"

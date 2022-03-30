@@ -1,5 +1,6 @@
 ---
 title: "Tables"
+shortTitle: "Tables"
 weight: 5
 summary: "Want to make a comparison?  Use a table!"
 draft: false
