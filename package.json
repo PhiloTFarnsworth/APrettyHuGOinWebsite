@@ -1,0 +1,21 @@
+{
+  "name": "hugoin",
+  "version": "1.0.0",
+  "description": "A site developed with Hugo",
+  "main": "lighthouserc.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhiloTFarnsworth/HuGOin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhiloTFarnsworth/HuGOin/issues"
+  },
+  "homepage": "https://github.com/PhiloTFarnsworth/HuGOin#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.20.1"
+  }
+}
