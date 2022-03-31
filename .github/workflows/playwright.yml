@@ -14,8 +14,8 @@ jobs:
       with:
         hugo-version: "latest"
     - uses: actions/checkout@v2
-    - name: Build Hugo Site
-      run: hugo --minify
+    - name: Run Hugo Server
+      run: hugo server
     - uses: actions/setup-node@v2
       with:
         node-version: '14.x'
