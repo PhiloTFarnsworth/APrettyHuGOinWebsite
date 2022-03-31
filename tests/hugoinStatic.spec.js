@@ -27,36 +27,36 @@ test.describe("HuGOin Static Navigation", () => {
         // Click text=page 2 of 12
         await page.locator('text=page 2 of 12').click();
 
-        // Click text=Next
-        await page.locator('text=Next').click();
+        // Click a:has-text("Next")
+        await page.locator('a:has-text("Next")').click();
         await expect(page).toHaveURL('http://localhost:1313/APrettyHuGoinWebsite/diatribes/section/');
 
         // Click text=page 3 of 12
         await page.locator('text=page 3 of 12').click();
 
-        // Click text=Next
-        await page.locator('text=Next').click();
+        // Click a:has-text("Next")
+        await page.locator('a:has-text("Next")').click();
         await expect(page).toHaveURL('http://localhost:1313/APrettyHuGoinWebsite/diatribes/data/');
 
         // Click text=page 4 of 12
         await page.locator('text=page 4 of 12').click();
 
-        // Click text=Next
-        await page.locator('text=Next').click();
+        // Click a:has-text("Next")
+        await page.locator('a:has-text("Next")').click();
         await expect(page).toHaveURL('http://localhost:1313/APrettyHuGoinWebsite/diatribes/tables/');
 
         // Click text=page 5 of 12
         await page.locator('text=page 5 of 12').click();
 
-        // Click text=Next
-        await page.locator('text=Next').click();
+        // Click a:has-text("Next")
+        await page.locator('a:has-text("Next")').click();
         await expect(page).toHaveURL('http://localhost:1313/APrettyHuGoinWebsite/diatribes/lists/');
 
         // Click text=page 6 of 12
         await page.locator('text=page 6 of 12').click();
 
-        // Click text=Next
-        await page.locator('text=Next').click();
+        // Click a:has-text("Next")
+        await page.locator('a:has-text("Next")').click();
         await expect(page).toHaveURL('http://localhost:1313/APrettyHuGoinWebsite/diatribes/other/');
 
         // Click text=page 7 of 12
@@ -69,29 +69,29 @@ test.describe("HuGOin Static Navigation", () => {
         // Click text=page 8 of 12
         await page.locator('text=page 8 of 12').click();
 
-        // Click text=Next
-        await page.locator('text=Next').click();
+        // Click a:has-text("Next")
+        await page.locator('a:has-text("Next")').click();
         await expect(page).toHaveURL('http://localhost:1313/APrettyHuGoinWebsite/diatribes/media/');
 
         // Click text=page 9 of 12
         await page.locator('text=page 9 of 12').click();
 
-        // Click text=Next
-        await page.locator('text=Next').click();
+        // Click a:has-text("Next")
+        await page.locator('a:has-text("Next")').click();
         await expect(page).toHaveURL('http://localhost:1313/APrettyHuGoinWebsite/diatribes/satire/');
 
         // Click text=page 10 of 12
         await page.locator('text=page 10 of 12').click();
 
-        // Click text=Next
-        await page.locator('text=Next').click();
+        // Click a:has-text("Next")
+        await page.locator('a:has-text("Next")').click();
         await expect(page).toHaveURL('http://localhost:1313/APrettyHuGoinWebsite/diatribes/epilogue/');
 
         // Click text=page 11 of 12
         await page.locator('text=page 11 of 12').click();
 
-        // Click text=Next
-        await page.locator('text=Next').click();
+        // Click a:has-text("Next")
+        await page.locator('a:has-text("Next")').click();
         await expect(page).toHaveURL('http://localhost:1313/APrettyHuGoinWebsite/diatribes/about/');
 
         // Click text=page 12 of 12
