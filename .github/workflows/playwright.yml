@@ -14,8 +14,6 @@ jobs:
       with:
         hugo-version: "latest"
     - uses: actions/checkout@v2
-    - name: Build Hugo Site
-      run: hugo --minify
     - uses: actions/setup-node@v2
       with:
         node-version: '14.x'
@@ -23,6 +21,8 @@ jobs:
       run: npm ci
     - name: Install Playwright
       run: npx playwright install --with-deps
+    - name: Hugo Test Server
+      run: hugo server
     - name: Run Playwright tests
       run: npx playwright test
     - uses: actions/upload-artifact@v2
