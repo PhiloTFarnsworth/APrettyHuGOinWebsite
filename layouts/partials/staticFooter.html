@@ -1,24 +1,27 @@
 {{ $this := .}}
 <footer>
-    <div>
+    <nav>
         {{ if .Next }}
-            <a title="Previous Page - {{ .Next.Title }}" href="{{ .Next.Permalink }}">{{ .Next.Title }}</a>
+            <a title="Previous Page - {{ .Next.Title }}" href="{{ .Next.Permalink }}">Prev</a>
         {{ else }}
-            <a title='About Page' href='{{ with .GetPage "about" }}{{ .Permalink }}{{ end }}'> About </a>
+            <a title='About A Pretty HuGOin Website' href='{{ with .GetPage "about" }}{{ .Permalink }}{{ end }}'> About </a>
         {{ end }}
         {{ range (where .Site.RegularPages "Section" .Section) }}
+            <div>
             {{ if eq $this.Title .Title }}
-                <a href='{{.Permalink}}' title="{{.Title}}" disabled="true" aria-disabled="true"> 0 </a>
+                <label for="pageMarker">{{.Params.shortTitle}}</label>
+                <a href='{{.Permalink}}' id="pageMarker" title="{{.Title}}" disabled="true" aria-disabled="true"> ! </a>
             {{ else }}
-                <a href='{{.Permalink}}' title="{{.Title}}"> o </a>
+                <a href='{{.Permalink}}' title="{{.Title}}"></a>
             {{ end }}
+            </div>
         {{ end }}
         {{ if .Prev }}
-            <a title="Next Page - {{ .Prev.Title }}" href="{{ .Prev.Permalink }}">{{ .Prev.Title }}</a>
+            <a title="Next Page - {{ .Prev.Title }}" href="{{ .Prev.Permalink }}">Next</a>
         {{ else }}
-            <a title='Back to the Beginning?' href='{{ with .GetPage "index" }}{{ .Permalink }}{{ end }}'> Back to the Beginning? </a>
+            <a title='Back to the Beginning?' href='{{ with .GetPage "index" }}{{ .Permalink }}{{ end }}'>Start</a>
         {{ end }}
-    </div>
+    </nav>
     <p aria-atomic="true" aria-live="polite">
         page <span id="currentPage">{{ .Weight }}</span> of {{ len (where .Site.RegularPages  "Section" .Section)  }} 
     </p>
