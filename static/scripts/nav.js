@@ -29,18 +29,16 @@ export const displayPage = async (navElement) => {
 // navigational elements labels.  We take a nav element, then use iterate over the parent element, if the element returned is
 // a navigational element with label, change visibility of label as appropriate.
 const toggleLabels = (navElement) => {
-    Array.from(navElement.parentElement.children).forEach((child) => {
+    const navBubbles = Array.from(navElement.parentElement.children).filter((element) => element.tagName === "DIV")
+    navBubbles.forEach((child) => {
         if (child === navElement) {
             //make label visible.  Since we're always going to place labels first, we can use firstChild.
             const label = Array.from(child.children).find((element) => element.tagName === 'LABEL')
             label.hidden = false
         } else {
-            //make label invisible.  Since we also hold buttons for navigation in a nav, ensure we're only modifying
-            //our radio 'div's
-            if (child.tagName === 'DIV') {
-                const label = Array.from(child.children).find((element) => element.tagName === 'LABEL')
-                label.hidden = true
-            }
+            //make label invisible.  
+            const label = Array.from(child.children).find((element) => element.tagName === 'LABEL')
+            label.hidden = true
         }
     })
 }
@@ -56,7 +54,7 @@ const navButtonHandler = async (activeNavElement) => {
     // Active nav is the radio button, so its grandparent is our total nav
     const nav = activeNavElement.parentElement.parentElement
     //Get all navigation bubble divs, to access first and last items quickly 
-    const navDivs = Array.from(nav.children).filter((element) => element.tagName === "DIV")
+    const navBubbles = Array.from(nav.children).filter((element) => element.tagName === "DIV")
 
     Array.from(nav.children).forEach((child) => {
         // First, Find Buttons
@@ -68,9 +66,9 @@ const navButtonHandler = async (activeNavElement) => {
                 if (prev.tagName === 'BUTTON') {
                     //On the static site, first page leads to the About.
                     child.innerHTML = 'About'
-                    child.setAttribute('title', "About A Pretty HuGOin' Website")
+                    child.setAttribute('title', navBubbles[navBubbles.length - 1].lastElementChild.getAttribute('aria-label'))
                     child.onclick = () => {
-                        displayPage(navDivs[navDivs.length - 1].lastElementChild)
+                        displayPage(navBubbles[navBubbles.length - 1].lastElementChild)
                     }
                 } else {
                     child.innerHTML = 'Prev'
@@ -84,10 +82,10 @@ const navButtonHandler = async (activeNavElement) => {
                 if (next.tagName === 'BUTTON') {
                     //Static site says we usher the people back to the beginning.
                     child.innerHTML = "Start"
-                    child.setAttribute('title', "Back to the Beginning?")
+                    child.setAttribute('title', navBubbles[0].lastElementChild.getAttribute('aria-label'))
                     // I'm totally cheating right now.  If an About page is a reasonable assumption, foreword is a terrible one.
-                    child.onclick = () => { 
-                        displayPage(navDivs[0].lastElementChild)
+                    child.onclick = () => {
+                        displayPage(navBubbles[0].lastElementChild)
                     }
                 } else {
                     child.innerHTML = "Next"
@@ -102,9 +100,9 @@ const navButtonHandler = async (activeNavElement) => {
     })
 }
 
-export const navRadioHandler = () => {
+export const navRadioInitiator = () => {
     // Start by getting all the nav Bubbles, which are all children from nav that are encased in a 'div'
-    const navBubbles =  Array.from(document.querySelector('nav').children).filter((element)=> element.tagName === 'DIV')
+    const navBubbles = Array.from(document.querySelector('nav').children).filter((element) => element.tagName === 'DIV')
     navBubbles.forEach((bubble) => {
         bubble.onclick = () => {
             displayPage(bubble.lastElementChild)

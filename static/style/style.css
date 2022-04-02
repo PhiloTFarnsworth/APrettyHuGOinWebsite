@@ -143,7 +143,7 @@ nav button {
   margin: 0.25rem 0.75rem;
   padding: 0.25rem;
   height: 2.25em;
-  min-width: 4rem;
+  min-width: 4.5rem;
   color: #47545c;
   font-size: 1rem;
   border-radius: 20px;
@@ -208,9 +208,9 @@ input[type=radio]:hover,
 input[type=radio]:focus,
 input[type=checkbox]:hover,
 input[type=checkbox]:focus {
-  animation: 1s ease-in 0s both hover-utijqpy;
+  animation: 1s ease-in 0s both hover-ugfnp6d;
 }
-@keyframes hover-utijqpy {
+@keyframes hover-ugfnp6d {
   to {
     background-color: rgba(216, 185, 175, 0.7);
   }
@@ -251,6 +251,7 @@ p.disclaimer {
 
 p.notice {
   margin: 0;
+  text-align: center;
   font-size: smaller;
   font-style: italic;
   font-weight: normal;
@@ -401,9 +402,9 @@ button {
 }
 
 button:hover {
-  animation: 1s ease-in 0s both hover-utijqqv;
+  animation: 1s ease-in 0s both hover-ugfnp6e;
 }
-@keyframes hover-utijqqv {
+@keyframes hover-ugfnp6e {
   to {
     background-color: rgba(218, 209, 180, 0.5);
   }
@@ -413,9 +414,9 @@ input:hover,
 select:hover,
 input:focus,
 select:focus {
-  animation: 1s ease-in 0s both hover-utijqr7;
+  animation: 1s ease-in 0s both hover-ugfnp73;
 }
-@keyframes hover-utijqr7 {
+@keyframes hover-ugfnp73 {
   to {
     background-color: #eeeeee;
   }
