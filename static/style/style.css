@@ -27,24 +27,24 @@
   font-display: swap;
 }
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  margin: 0% auto;
   padding: 0rem 4rem;
-  background-color: #657884;
-  color: #111;
   min-width: -moz-fit-content;
   min-width: -webkit-fit-content;
   min-width: fit-content;
   display: flex;
   flex-direction: column;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #657884;
+  color: #111;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.25rem;
 }
 
 header {
   font-size: large;
-  font-style: bold;
+  font-weight: bold;
   background-color: rgba(255, 255, 255, 0.9);
   border: 4px solid #cec19b;
-  padding: 0.5rem 1rem;
   border-radius: 20px 20px 0px 0px;
   border-bottom: none;
   display: flex;
@@ -54,10 +54,10 @@ header {
 }
 
 main {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 0.5rem 1rem;
-  border: 4px solid #cea89b;
+  padding: 1rem;
   min-height: 65vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 4px solid #cea89b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,16 +65,16 @@ main {
 }
 
 footer {
+  padding: 0.25rem 0 0 0;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
   font-family: "LEMONMILK";
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.9);
   border: 4px solid #cec19b;
-  padding: 0.5rem 0 0 0;
   border-radius: 0px 0px 20px 20px;
   border-top: none;
-  position: sticky;
-  position: -webkit-sticky;
-  bottom: 0;
 }
 footer p {
   text-align: center;
@@ -89,20 +89,19 @@ section {
 }
 
 div {
+  padding: 0.5rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
 }
 
 .flexRows {
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin: auto;
-  padding: 0.5rem 1rem;
 }
 
 a {
@@ -116,6 +115,7 @@ a:hover {
 }
 
 nav {
+  padding: 0.25rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -126,7 +126,8 @@ nav a:hover {
   color: #657884;
 }
 nav a {
-  font-style: "LEMONMILK";
+  margin: 0.25rem 0.75rem;
+  padding: 0.25rem;
   flex: 1;
   text-align: center;
   text-decoration: none;
@@ -134,46 +135,41 @@ nav a {
   border: 1px solid #657884;
   background-color: rgba(216, 185, 175, 0.7);
   border-radius: 20px;
-  margin: 0.25rem 0.75rem;
-  padding: 0.25rem;
 }
 nav a:only-of-type {
   height: 1.5rem;
-  width: 100%;
 }
 nav button {
-  font-style: "LEMONMILK";
-  color: #47545c;
-  border-radius: 20px;
-  height: 2.25em;
-  min-width: 4rem;
   margin: 0.25rem 0.75rem;
   padding: 0.25rem;
+  height: 2.25em;
+  min-width: 4rem;
+  color: #47545c;
+  font-size: 1rem;
+  border-radius: 20px;
   align-self: end;
   flex: 1;
 }
 nav div {
+  padding: 0.75rem 0 0 0;
   display: flex;
   justify-content: center;
-  padding: 0.75rem 0 0 0;
 }
 nav div label {
   position: absolute;
   top: 5px;
 }
 nav div a {
-  outline: none;
-  text-align: center;
-  color: #47545c;
+  margin: 0.5rem 0.15rem;
+  padding: 0.25rem 0.5rem;
   border: 2px solid #657884;
   background-color: rgba(218, 209, 180, 0.5);
-  margin: 0.5rem 0.15rem;
   font-weight: 900;
   font-size: 2rem;
-  color: #47545c;
+  outline: none;
+  text-align: center;
   display: block;
   line-height: 75%;
-  padding: 0.25rem 0.5rem;
 }
 
 input[type=radio], input[type=checkbox] {
@@ -182,22 +178,26 @@ input[type=radio], input[type=checkbox] {
 }
 
 input[type=radio], input[type=checkbox] {
+  margin: 0.5rem 0.15rem;
+  align-self: center;
   border: 2px solid #657884;
   border-radius: 20px;
   background-color: rgba(218, 209, 180, 0.5);
-  margin: 0.5rem 0.15rem;
-  align-self: center;
 }
 
 input[type=radio]::before, input[type=checkbox]::before {
+  visibility: hidden;
+  display: block;
   content: "!";
   font-family: "LEMONMILK";
   font-weight: 900;
   font-size: 2rem;
   color: #47545c;
-  visibility: hidden;
-  display: block;
   line-height: 50%;
+}
+
+input[type=checkbox]::before {
+  content: "x";
 }
 
 input[type=radio]:checked::before, input[type=checkbox]:checked::before {
@@ -208,9 +208,9 @@ input[type=radio]:hover,
 input[type=radio]:focus,
 input[type=checkbox]:hover,
 input[type=checkbox]:focus {
-  animation: 1s ease-in 0s both hover-uzuzif6;
+  animation: 1s ease-in 0s both hover-utijqpy;
 }
-@keyframes hover-uzuzif6 {
+@keyframes hover-utijqpy {
   to {
     background-color: rgba(216, 185, 175, 0.7);
   }
@@ -222,11 +222,11 @@ h3,
 h4,
 h5,
 h6 {
+  margin-bottom: 0rem;
   font-family: "LEMONMILK";
   text-align: center;
   color: #47545c;
   font-weight: bold;
-  margin-bottom: 0rem;
   border-top: 2px solid #cec19b;
   border-bottom: 2px solid #cea89b;
 }
@@ -236,36 +236,38 @@ sup {
 }
 
 p {
-  text-align: start;
-  flex: 3;
   padding: 0.25rem 3rem;
+  flex: 3;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: start;
   align-self: center;
-  line-height: 1.3rem;
 }
 
 p.disclaimer {
-  font-style: italic;
   flex: 1;
+  font-style: italic;
 }
 
 p.notice {
-  margin-top: 0;
+  margin: 0;
   font-size: smaller;
   font-style: italic;
+  font-weight: normal;
 }
 
 aside {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  flex: 1;
-  margin: 0.5rem 0.5rem;
-  padding: 0.5rem 0.5rem;
   font-size: small;
   box-shadow: 0.25rem 0.25rem 1rem #cea89b, -0.1em -0.1em #657884;
   background-color: rgba(218, 209, 180, 0.5);
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px;
 }
 aside h1,
 aside h2,
@@ -273,9 +275,9 @@ aside h3,
 aside h4,
 aside h5,
 aside h6 {
+  margin: 0;
   font-style: italic;
   font-size: small;
-  margin-bottom: 0;
 }
 aside p {
   padding: 0rem 0.5rem;
@@ -285,31 +287,31 @@ aside p::first-letter {
 }
 
 table {
-  padding: 1rem 1rem;
-  margin: 1rem auto;
+  padding: 1rem;
+  margin: 1rem;
   box-sizing: border-box;
+  font-family: "LEMONMILK";
   text-overflow: wrap;
+  font-weight: bold;
   border: 5px solid #657884;
   border-radius: 20px 0px 20px 0px;
   background: rgba(218, 209, 180, 0.5);
-  font-weight: bold;
 }
 table tr {
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem;
 }
 table tr th {
-  font-family: "LEMONMILK";
   padding: 0.25rem 0.5rem;
-  border-bottom: 1px solid black;
   box-sizing: border-box;
+  border-bottom: 1px solid black;
 }
 table tr th a {
   text-decoration: none;
 }
 table tr td {
   padding: 0.25rem 0.5rem;
-  text-align: center;
   box-sizing: border-box;
+  text-align: center;
 }
 
 td[name=yes] {
@@ -324,39 +326,38 @@ td[name=na] {
   background: rgba(128, 128, 128, 0.8);
 }
 
-ul,
-ol {
+ul, ol {
+  flex: 1;
   font-family: "LEMONMILK";
   font-size: large;
-  flex: 1;
 }
 ul ul,
-ul ol,
-ol ul,
+ul ol, ol ul,
 ol ol {
   font-size: 90%;
 }
-ul li,
-ol li {
+ul li, ol li {
   padding: 0.5rem 0rem;
   line-height: 1.5;
 }
 
 form {
-  padding: 2rem 2rem;
-  margin: 1rem 1rem;
+  padding: 2rem;
+  margin: 1rem;
+  box-sizing: border-box;
+  font-family: "LEMONMILK";
+  text-align: center;
   border: 5px solid #657884;
   border-radius: 20px 0px 20px 0px;
   background: rgba(218, 209, 180, 0.5);
-  box-sizing: border-box;
 }
 form fieldset {
+  padding: 1rem;
+  align-items: stretch;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 1rem 1rem;
-  align-items: stretch;
 }
 form fieldset legend {
   font-size: large;
@@ -364,14 +365,8 @@ form fieldset legend {
   font-style: italic;
 }
 
-legend {
-  font-family: "LEMONMILK", sans-serif;
-}
-
 label {
-  font-family: "LEMONMILK", sans-serif;
   font-weight: bold;
-  text-align: center;
 }
 
 .freeLabel {
@@ -380,65 +375,47 @@ label {
 }
 
 input {
-  margin: 0.5rem 0rem;
-  padding: 0.5rem 0.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   font-size: large;
 }
 
-input[type=number],
-input[type=text],
-input[type=datetime-local],
-select {
+input[type=number], input[type=text], input[type=datetime-local], select {
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 select {
-  margin: 0.5rem 0rem;
-  padding: 0.5rem 0.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   box-sizing: border-box;
 }
 
 button {
   margin: 1rem auto;
   height: 3rem;
+  font-family: "LEMONMILK", sans-serif;
+  font-weight: bold;
   border: 1px solid #657884;
   border-radius: 5px;
   background-color: rgba(216, 185, 175, 0.7);
-  font-family: "LEMONMILK", sans-serif;
-  font-weight: bold;
 }
 
 button:hover {
-  animation: 1s ease-in 0s both hover-uzuzifj;
+  animation: 1s ease-in 0s both hover-utijqqv;
 }
-@keyframes hover-uzuzifj {
+@keyframes hover-utijqqv {
   to {
     background-color: rgba(218, 209, 180, 0.5);
   }
-}
-
-.fancyBtn {
-  flex: 1;
-  margin: 0;
-}
-
-textarea {
-  margin: 1rem 1rem;
-  padding: 1rem 1rem;
-  background-color: rgba(216, 185, 175, 0.7);
-  width: 80%;
-  height: 4rem;
-  font-size: x-large;
-  font-weight: bold;
 }
 
 input:hover,
 select:hover,
 input:focus,
 select:focus {
-  animation: 1s ease-in 0s both hover-uzuzig6;
+  animation: 1s ease-in 0s both hover-utijqr7;
 }
-@keyframes hover-uzuzig6 {
+@keyframes hover-utijqr7 {
   to {
     background-color: #eeeeee;
   }
@@ -474,20 +451,20 @@ meter {
 }
 
 details {
-  width: 100%;
   padding: 0.25rem 0.5rem;
+  width: 100%;
   color: #47545c;
+  text-align: center;
 }
 details summary {
   font-family: "LEMONMILK";
   font-weight: bold;
-  text-align: center;
   border-bottom: 1px solid #657884;
 }
 details p {
-  text-align: center;
   margin: 0;
   padding: 0.5rem 3rem;
+  text-align: center;
 }
 
 address {

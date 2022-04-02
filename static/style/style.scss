@@ -61,50 +61,64 @@ $TertiaryBg: color.scale($Tertiary, $lightness: 20%, $alpha: -30%);
     justify-content: space-around;
 }
 
-// Big general Elements.  We'll use flex column on body, and use divs to create rows.
+// General Elements
 body {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    margin: 0% auto;
     padding: 0rem 4rem;
-    background-color: $Primary;
-    color: #111;
+
     min-width: -moz-fit-content;
     min-width: -webkit-fit-content;
     min-width: fit-content;
+
     display: flex;
     flex-direction: column;
+
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    background-color: $Primary;
+    color: #111;
+    letter-spacing: .05rem;
+    word-spacing: .25rem;
 }
 
 header {
+
     font-size: large;
-    font-style: bold;
+    font-weight: bold;
+
     background-color: rgba($color: #ffffff, $alpha: 0.9);
+
     border: 4px solid $Secondary;
-    padding: 0.5rem 1rem;
     border-radius: 20px 20px 0px 0px;
     border-bottom: none;
+    
     @include flexCol();
 }
 
 main {
-    background-color: rgba($color: #ffffff, $alpha: 0.9);
-    padding: 0.5rem 1rem;
-    border: 4px solid $Tertiary;
+    padding: 1rem;
     min-height: 65vh;
+
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
+
+    border: 4px solid $Tertiary;
+    
     @include flexCol();
 }
 
 footer {
-    font-family: "LEMONMILK";
-    font-weight: bold;
-    background-color: rgba($color: #ffffff, $alpha: 0.9);
-    border: 4px solid $Secondary;
-    padding: 0.5rem 0 0 0;
-    border-radius: 0px 0px 20px 20px;
-    border-top: none;
+    padding: 0.25rem 0 0 0;
+
     position: sticky;
     position: -webkit-sticky;
     bottom: 0;
+    
+    font-family: "LEMONMILK";
+    font-weight: bold;
+    
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
+    border: 4px solid $Secondary;
+    border-radius: 0px 0px 20px 20px;
+    border-top: none;
+
     p {
         text-align: center;
         margin: 0;
@@ -116,23 +130,26 @@ section {
 }
 
 div {
+    padding: 0.5rem;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
 }
 
 .flexRows {
+    padding: 0.5rem;
+    
     @include flexCol();
-    margin: auto;
-    padding: 0.5rem 1rem;
+    
 }
 
 a {
     color: $TertiaryFont;
     font-weight: bold;
 }
+
 a:visited,
 a:hover {
     color: $SecondaryFont;
@@ -141,16 +158,22 @@ a:hover {
 //Nav Elements
 
 nav {
+    padding: .25rem;
     display: flex;
     justify-content: space-evenly;
+    
     a:visited {
         color: $PrimaryFont;
     }
+    
     a:hover {
         color: $Primary;
     }
+    
     a {
-        font-style: "LEMONMILK";
+        margin: 0.25rem .75rem;
+        padding: .25rem;
+        
         flex: 1;
         text-align: center;
         text-decoration: none;
@@ -158,73 +181,90 @@ nav {
         border: 1px solid $Primary;
         background-color: $TertiaryBg;
         border-radius: 20px;
-        margin: 0.25rem .75rem;
-        padding: .25rem;
     }
+    
     a:only-of-type {
         height: 1.5rem;
-        width: 100%;
     }
     button {
-        font-style: "LEMONMILK";
-        color: $PrimaryFont;
-        border-radius: 20px;
-        height: 2.25em;
-        min-width: 4rem;
         margin: 0.25rem .75rem;
         padding: .25rem;
+        
+        height: 2.25em;
+        min-width: 4rem;
+        
+        color: $PrimaryFont;
+        font-size: 1rem;
+        border-radius: 20px;
+
         align-self: end;
         flex: 1;
     }
     div{
+        padding: .75rem 0 0 0;
+
         display: flex;
         justify-content: center;
-        padding: .75rem 0 0 0;
+
         label {
             position: absolute;
             top: 5px;
         }
+
         a {
-            outline: none;
-            text-align: center;
-            color: $PrimaryFont;
+            margin: .5rem .15rem;
+            padding: .25rem .5rem;
+            
             border: 2px solid $Primary;
             background-color: $SecondaryBg;
-            margin: .5rem .15rem;
+            
             font-weight: 900;
             font-size: 2rem;
-            color: $PrimaryFont;
+            outline: none;
+            text-align: center;
+
             display: block;
             line-height: 75%;
-            padding: .25rem .5rem;
         }
     }
 }
 
+// Radio navigation buttons
 input[type=radio], input[type=checkbox] {
     appearance: none;
     -webkit-appearance: none;
 }
+
 input[type=radio], input[type=checkbox] {
+    margin: .5rem .15rem;
+
+    align-self: center;
+    
     border: 2px solid $Primary;
     border-radius: 20px;
     background-color: $SecondaryBg;
-    margin: .5rem .15rem;
-    align-self: center;
+    
 }
 input[type=radio]::before, input[type=checkbox]::before {
+    visibility: hidden;
+    display: block;
+    
     content: '!';
-    font-family: 'LEMONMILK';
+    font-family: "LEMONMILK";
     font-weight: 900;
     font-size: 2rem;
     color: $PrimaryFont;
-    visibility: hidden;
-    display: block;
     line-height: 50%;
 }
+
+input[type=checkbox]::before {
+    content:"x";
+}
+
 input[type=radio]:checked::before, input[type=checkbox]:checked::before {
     visibility: visible;
 }
+
 input[type=radio]:hover,
 input[type=radio]:focus,
 input[type=checkbox]:hover,
@@ -239,11 +279,13 @@ h3,
 h4,
 h5,
 h6 {
+    margin-bottom: 0rem;
+    
     font-family: "LEMONMILK";
     text-align: center;
     color: $PrimaryFont;
     font-weight: bold;
-    margin-bottom: 0rem;
+
     border-top: 2px solid $Secondary;
     border-bottom: 2px solid $Tertiary;
 }
@@ -251,76 +293,101 @@ h6 {
 sup {
     font-family: "LEMONMILK";
 }
+
 p {
-    text-align: start;
-    flex: 3;
     padding: 0.25rem 3rem;
+    flex: 3;
+    
+    font-size: 1rem;
+
+    line-height: 1.5rem;
+
+    text-align: start;
     align-self: center;
-    line-height: 1.3rem;
 }
+
 p.disclaimer {
-    font-style: italic;
     flex: 1;
+
+    font-style: italic;
 }
 
 // Notice is for the static site, we want to direct users back to the SPA version, and want this message to be unobtrusive.
 p.notice {
-    margin-top: 0;
+    margin: 0;
+
     font-size: smaller;
     font-style: italic;
+    font-weight: normal;
 }
 
 aside {
-    @include flexCol();
+    margin: 0.5rem;
+    padding: 0.5rem;
+
     flex: 1;
-    margin: 0.5rem 0.5rem;
-    padding: 0.5rem 0.5rem;
+    @include flexCol();
+
     font-size: small;
+    
     box-shadow: 0.25rem 0.25rem 1rem $Tertiary, -0.1em -0.1em $Primary;
     background-color: $SecondaryBg;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
+    
     h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
+        margin: 0;
         font-style: italic;
         font-size: small;
-        margin-bottom: 0;
     }
+    
     p {
         padding: 0rem .5rem;
     }
+
     p::first-letter {
         font-size: medium;
     }
 }
 
+// Table elements
+
 table {
-    padding: 1rem 1rem;
-    margin: 1rem auto;
+    padding: 1rem;
+    margin: 1rem;
     box-sizing: border-box;
+
+    font-family: "LEMONMILK";
     text-overflow: wrap;
+    font-weight: bold;
+    
     border: 5px solid $Primary;
     border-radius: 20px 0px 20px 0px;
     background: $SecondaryBg;
-    font-weight: bold;
+
     tr {
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem;
+
         th {
-            font-family: "LEMONMILK";
             padding: 0.25rem 0.5rem;
-            border-bottom: 1px solid black;
             box-sizing: border-box;
+            
+            border-bottom: 1px solid black;
+            
             a {
                 text-decoration: none;
             }
         }
+
         td {
             padding: 0.25rem 0.5rem;
-            text-align: center;
             box-sizing: border-box;
+
+            text-align: center;
         }
     }
 }
@@ -337,32 +404,44 @@ td[name="na"] {
     background: rgba(128, 128, 128, 0.8);
 }
 
-ul,
-ol {
+ul, ol {
+    flex: 1;
+
     font-family: "LEMONMILK";
     font-size: large;
-    flex: 1;
+    
     ul,
     ol {
         font-size: 90%;
     }
+    
     li {
         padding: 0.5rem 0rem;
+        
         line-height: 1.5;
     }
 }
 
+// Form Elements
+
 form {
-    padding: 2rem 2rem;
-    margin: 1rem 1rem;
+    padding: 2rem;
+    margin: 1rem;
+    box-sizing: border-box;
+
+    font-family: "LEMONMILK";
+    text-align: center;
+
     border: 5px solid $Primary;
     border-radius: 20px 0px 20px 0px;
     background: $SecondaryBg;
-    box-sizing: border-box;
+    
     fieldset {
-        @include flexCol();
-        padding: 1rem 1rem;
+        padding: 1rem;
+
         align-items: stretch;
+        @include flexCol();
+
         legend {
             font-size: large;
             font-weight: bold;
@@ -371,68 +450,48 @@ form {
     }
 }
 
-legend {
-    font-family: "LEMONMILK", sans-serif;
+label {
+    font-weight: bold;
 }
 
-label {
-    font-family: "LEMONMILK", sans-serif;
-    font-weight: bold;
-    text-align: center;
-}
 .freeLabel {
     width: 100%;
-    
+
     color: $PrimaryFont;
 }
 
 input {
-    margin: 0.5rem 0rem;
-    padding: 0.5rem 0.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+
     font-size: large;
 }
 
-input[type="number"],
-input[type="text"],
-input[type="datetime-local"],
-select {
+input[type="number"], input[type="text"], input[type="datetime-local"], select {
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 select {
-    margin: 0.5rem 0rem;
-    padding: 0.5rem 0.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+
     box-sizing: border-box;
 }
 
 button {
     margin: 1rem auto;
     height: 3rem;
+
+    font-family: "LEMONMILK", sans-serif;
+    font-weight: bold;
+    
     border: 1px solid $Primary;
     border-radius: 5px;
     background-color: $TertiaryBg;
-    font-family: "LEMONMILK", sans-serif;
-    font-weight: bold;
 }
 
 button:hover {
     @include hover-animated($SecondaryBg);
-}
-
-.fancyBtn {
-    flex: 1;
-    margin: 0;
-}
-
-
-textarea {
-    margin: 1rem 1rem;
-    padding: 1rem 1rem;
-    background-color: $TertiaryBg;
-    width: 80%;
-    height: 4rem;
-    font-size: x-large;
-    font-weight: bold;
 }
 
 input:hover,
@@ -442,10 +501,14 @@ select:focus {
     @include hover-animated(#eeeeee);
 }
 
+// MISC Elements
+
 figure {
     margin: 1rem 4rem;
     padding: 1rem 2rem;
+
     background-color: $SecondaryBg;
+    
     figcaption {
         text-align: end;
         cite {
@@ -453,6 +516,7 @@ figure {
             font-size: small;
         }
     }
+    
     blockquote {
         font-family: "LEMONMILK";
         font-size: large;
@@ -470,20 +534,26 @@ meter {
     height: 5rem;
     width: 15rem;
 }
+
 details {
-    width: 100%;
     padding: 0.25rem 0.5rem;
+    width: 100%;
+
     color: $PrimaryFont;
+    text-align: center;
+    
     summary {
         font-family: "LEMONMILK";
         font-weight: bold;
-        text-align: center;
+        
         border-bottom: 1px solid $Primary;
     }
+
     p {
-        text-align: center;
         margin: 0;
         padding: 0.5rem 3rem;
+
+        text-align: center;
     }
 }
 
@@ -491,7 +561,8 @@ address {
     text-align: center;
 }
 
-// I'm not entirely sure why, but media stuff only seems to activate at the end of a file.
+// Media compatibility rules
+
 @media all and (max-width: 750px) {
     iframe {
         width: 275px;

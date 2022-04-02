@@ -11,7 +11,7 @@ export const displayPage = async (navElement) => {
     }
     const data = await response.json()
     // See single.json.json for JSON template
-    document.querySelector('main').innerHTML = data.title + data.content
+    document.querySelector('main').innerHTML = '<section>' + data.title + data.content + '</section>'
     document.querySelector('#currentPage').innerHTML = data.weight
     // update history pointing to static site page (for now).
     const baseURL = window.location.toString().replace(window.location.search, '')
