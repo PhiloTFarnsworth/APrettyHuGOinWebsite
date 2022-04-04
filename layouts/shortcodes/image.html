@@ -1,11 +1,11 @@
 <figure>
     <picture>
-        <source srcset='images/{{ .Get "image" }}Mobile.avif' type='image/avif' media='(max-width: 800px)' />
-        <source srcset='images/{{ .Get "image" }}Mobile.webp' type='image/webp' media='(max-width: 800px)' />
-        <source srcset='images/{{ .Get "image" }}Mobile.png' media='(max-width: 800px)' />
-        <source srcset='images/{{ .Get "image" }}.avif' type='image/avif' />
-        <source srcset='images/{{ .Get "image" }}.webp' type='image/webp' />
-        <img src='images/{{ .Get "image" }}.png' alt='{{ .Get "alt" }}' />
+        <source srcset='{{.Page.Permalink}}images/{{ .Get "image" }}Mobile.avif' type='image/avif' media='(max-width: 800px)' />
+        <source srcset='{{.Page.Permalink}}images/{{ .Get "image" }}Mobile.webp' type='image/webp' media='(max-width: 800px)' />
+        <source srcset='{{.Page.Permalink}}images/{{ .Get "image" }}Mobile.png' media='(max-width: 800px)' />
+        <source srcset='{{.Page.Permalink}}images/{{ .Get "image" }}.avif' type='image/avif' />
+        <source srcset='{{.Page.Permalink}}images/{{ .Get "image" }}.webp' type='image/webp' />
+        <img src='{{.Page.Permalink}}images/{{ .Get "image" }}.png' alt='{{ .Get "alt" }}' />
     </picture>
     {{ if .Get "caption" }}
         <figcaption>{{ .Get "caption" }}</figcaption>

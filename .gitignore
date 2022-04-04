@@ -17,6 +17,12 @@ hugo.linux
 /.hugo_build.lock
 
 # End of https://www.toptal.com/developers/gitignore/api/hugo
+
+### testing ###
 node_modules/
 test-results/
 playwright-report/
+
+### Image processing ###  
+# don't commit source image files
+*.xcf
