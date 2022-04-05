@@ -1,5 +1,1 @@
-{{if .IsNamedParams }}
-    <abbr title='{{ .Get "title" }}'> {{ .Get "abbr"}}</abbr>
-{{else}}
-    <abbr>{{ .Get 0}}</abbr>
-{{end}}
+{{if .IsNamedParams }}<abbr title='{{ .Get "title" }}'>{{ .Get "abbr"}}</abbr>{{else}}<abbr>{{ .Get 0 }}</abbr>{{end}}
