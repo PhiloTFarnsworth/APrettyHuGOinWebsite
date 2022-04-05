@@ -1,4 +1,4 @@
-baseURL = 'https://philotfarnsworth.github.io/APrettyHuGoinWebsite'
+baseURL = 'https://philotfarnsworth.github.io/APrettyHuGoinWebsite/'
 languageCode = 'en-us'
 enableRobotsTXT = 'true'
 title = "A Pretty HuGOin' Website"
