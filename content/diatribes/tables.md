@@ -86,7 +86,7 @@ For instance, let's say you want to measure this website against some other well
                 {{< details summary="2" body="Excluding Youtube embed." >}}
         <tr>
             <td colspan="7">
-                {{< details summary="3" body="only ~195 kB if you stop reading now!  Much of the new overhead is due processing our images lossless-ly, as opposed to previous lossy versions." >}}    
+                {{< details summary="3" body="only ~195 kB if you stop reading now!  Much of the new overhead is due to processing our images lossless-ly, as opposed to lossy versions in the earlier iterations." >}}    
 </table>
 
 You can also get a little dishonest by omission.  While I might think otherwise, Google's form may be a little more useful than the form demonstrated on this webpage.
