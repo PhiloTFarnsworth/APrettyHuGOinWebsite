@@ -24,8 +24,8 @@ test.describe("HuGOin Navigation", () => {
             page.locator('button:has-text("Next")').click()
         ]);
 
-        // Click text=Why Another Jekyllin' Website?
-        await page.locator('text=Why Another Jekyllin\' Website?').click();
+        // Click text=Why Another Heckin' Website?
+        await page.locator('text=Why Another Heckin\' Website?').click();
 
         // Click text=Why?
         await page.locator('text=Why?').click();
@@ -383,7 +383,7 @@ test.describe("HuGOin Navigation", () => {
         ]);
 
         // Click text=Why Another Jekyllin' Website?
-        await page.locator('text=Why Another Jekyllin\' Website?').click();
+        await page.locator('text=Why Another Heckin\' Website?').click();
 
         // Click text=Why?
         await page.locator('text=Why?').click();

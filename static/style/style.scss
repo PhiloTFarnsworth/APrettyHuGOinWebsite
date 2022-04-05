@@ -459,6 +459,7 @@ label {
     width: 100%;
 
     color: $PrimaryFont;
+    text-align: center;
 }
 
 input {
@@ -505,8 +506,8 @@ select:focus {
 // MISC Elements
 
 figure {
-    margin: 1rem 4rem;
-    padding: 1rem 2rem;
+    margin: 1rem;
+    padding: 1rem;
 
     background-color: $SecondaryBg;
     
