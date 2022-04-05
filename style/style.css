@@ -208,9 +208,9 @@ input[type=radio]:hover,
 input[type=radio]:focus,
 input[type=checkbox]:hover,
 input[type=checkbox]:focus {
-  animation: 1s ease-in 0s both hover-ugfnp6d;
+  animation: 1s ease-in 0s both hover-upnnlcn;
 }
-@keyframes hover-ugfnp6d {
+@keyframes hover-upnnlcn {
   to {
     background-color: rgba(216, 185, 175, 0.7);
   }
@@ -373,6 +373,7 @@ label {
 .freeLabel {
   width: 100%;
   color: #47545c;
+  text-align: center;
 }
 
 input {
@@ -402,9 +403,9 @@ button {
 }
 
 button:hover {
-  animation: 1s ease-in 0s both hover-ugfnp6e;
+  animation: 1s ease-in 0s both hover-upnnld1;
 }
-@keyframes hover-ugfnp6e {
+@keyframes hover-upnnld1 {
   to {
     background-color: rgba(218, 209, 180, 0.5);
   }
@@ -414,17 +415,17 @@ input:hover,
 select:hover,
 input:focus,
 select:focus {
-  animation: 1s ease-in 0s both hover-ugfnp73;
+  animation: 1s ease-in 0s both hover-upnnle1;
 }
-@keyframes hover-ugfnp73 {
+@keyframes hover-upnnle1 {
   to {
     background-color: #eeeeee;
   }
 }
 
 figure {
-  margin: 1rem 4rem;
-  padding: 1rem 2rem;
+  margin: 1rem;
+  padding: 1rem;
   background-color: rgba(218, 209, 180, 0.5);
 }
 figure figcaption {
