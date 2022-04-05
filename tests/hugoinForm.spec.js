@@ -3,11 +3,11 @@ const { test, expect } = require('@playwright/test');
 test.describe('HuGOin Form Submission', () => {
     
     test('Form - SPA site - navigate from first page', async ({ page }) => {
-        // Go to http://localhost:1313/APrettyHuGoinWebsite/?page=1
-        await page.goto('http://localhost:1313/APrettyHuGoinWebsite/?page=1');
+        // Go to http://localhost:1313/APrettyHuGOinWebsite/?page=1
+        await page.goto('http://localhost:1313/APrettyHuGOinWebsite/?page=1');
         // Check [aria-label="Forms"]
         await page.locator('[aria-label="Forms"]').check();
-        await expect(page).toHaveURL('http://localhost:1313/APrettyHuGoinWebsite/?page=8');
+        await expect(page).toHaveURL('http://localhost:1313/APrettyHuGOinWebsite/?page=8');
         // Click [placeholder="Type Something\, Will ya\?"]
         await page.locator('[placeholder="Type Something\\, Will ya\\?"]').click();
         // Fill [placeholder="Type Something\, Will ya\?"]
@@ -45,8 +45,8 @@ test.describe('HuGOin Form Submission', () => {
     })
 
     test('Form - SPA - Start on Form Page', async ({ page }) => {
-        // Go to http://localhost:1313/APrettyHuGoinWebsite/?page=8
-        await page.goto('http://localhost:1313/APrettyHuGoinWebsite/?page=8');
+        // Go to http://localhost:1313/APrettyHuGOinWebsite/?page=8
+        await page.goto('http://localhost:1313/APrettyHuGOinWebsite/?page=8');
         // Click [placeholder="Type Something\, Will ya\?"]
         await page.locator('[placeholder="Type Something\\, Will ya\\?"]').click();
         // Fill [placeholder="Type Something\, Will ya\?"]
@@ -84,8 +84,8 @@ test.describe('HuGOin Form Submission', () => {
     })
 
     test('Form - Static site', async ({ page }) => {
-        // Go to http://localhost:1313/APrettyHuGoinWebsite/diatribes/form/
-        await page.goto('http://localhost:1313/APrettyHuGoinWebsite/diatribes/form/');
+        // Go to http://localhost:1313/APrettyHuGOinWebsite/diatribes/form/
+        await page.goto('http://localhost:1313/APrettyHuGOinWebsite/diatribes/form/');
         // Click [placeholder="Type Something\, Will ya\?"]
         await page.locator('[placeholder="Type Something\\, Will ya\\?"]').click();
         // Fill [placeholder="Type Something\, Will ya\?"]
