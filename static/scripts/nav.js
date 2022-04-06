@@ -4,7 +4,7 @@ import { progressHandler } from "./progress.js"
 // Returns a promise to load content.  Expects a navElement (radio button) to a json file.  Sets 'main' element content and updates current page with
 // current 'weight', updates browser history.
 export const displayPage = async (navElement) => {
-    window.scrollTo(0,0)
+    window.scroll(0,0)
     const response = await fetch(navElement.value, { method: 'GET' })
     if (!response.ok) {
         document.querySelector('main').innerHTML = '<p>Error fetching your content, please refresh page<p>'
