@@ -107,8 +107,8 @@ main {
 footer {
     padding: 0.25rem 0 0 0;
 
-    position: sticky;
     position: -webkit-sticky;
+    position: sticky;
     bottom: 0;
     
     font-family: "LEMONMILK";
@@ -565,7 +565,7 @@ address {
 
 // Media compatibility rules
 
-@media all and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     iframe {
         width: 275px;
         height: 155px;
@@ -574,9 +574,18 @@ address {
         width: 15rem;
     }
     table {
-        font-size: smaller;
+        margin: .5rem;
+        padding: .5rem;
+        tr {
+            padding: .25rem;
+            
+        }
+        th, td {
+            padding: .2rem;
+            font-size: small;
+        }
         a {
-            font-size: medium;
+            font-size: smaller;
         }
     }
 }
