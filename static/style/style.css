@@ -92,7 +92,7 @@ div {
   padding: 0.5rem;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -208,9 +208,9 @@ input[type=radio]:hover,
 input[type=radio]:focus,
 input[type=checkbox]:hover,
 input[type=checkbox]:focus {
-  animation: 1s ease-in 0s both hover-u8s55vd;
+  animation: 1s ease-in 0s both hover-uqfm9x1;
 }
-@keyframes hover-u8s55vd {
+@keyframes hover-uqfm9x1 {
   to {
     background-color: rgba(216, 185, 175, 0.7);
   }
@@ -403,9 +403,9 @@ button {
 }
 
 button:hover {
-  animation: 1s ease-in 0s both hover-u8s55w6;
+  animation: 1s ease-in 0s both hover-uqfm9xa;
 }
-@keyframes hover-u8s55w6 {
+@keyframes hover-uqfm9xa {
   to {
     background-color: rgba(218, 209, 180, 0.5);
   }
@@ -415,9 +415,9 @@ input:hover,
 select:hover,
 input:focus,
 select:focus {
-  animation: 1s ease-in 0s both hover-u8s55wv;
+  animation: 1s ease-in 0s both hover-uqfm9y8;
 }
-@keyframes hover-u8s55wv {
+@keyframes hover-uqfm9y8 {
   to {
     background-color: #eeeeee;
   }
